@@ -33,8 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   loopMessages();
-
-  // Botón de modo claro/oscuro
   const themeToggle = document.getElementById('theme-toggle');
   if (themeToggle) {
     themeToggle.addEventListener('click', () => {
@@ -55,7 +53,6 @@ emailElement.addEventListener('click', () => {
   });
 });
 
-// Fade in para la sección "Sobre mí"
 const aboutSection = document.querySelector('.about-me');
 const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
@@ -69,8 +66,6 @@ const observer = new IntersectionObserver((entries, observer) => {
 if (aboutSection) {
   observer.observe(aboutSection);
 }
-
-// Fade in para las tarjetas de proyecto
 const projectCards = document.querySelectorAll('.project-card');
 const projectObserver = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
@@ -84,8 +79,6 @@ const projectObserver = new IntersectionObserver((entries, observer) => {
 projectCards.forEach(card => {
   projectObserver.observe(card);
 });
-
-// Fade in para las tarjetas de experiencia laboral
 const experienceCards = document.querySelectorAll('.experience-cards .card');
 const experienceObserver = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
@@ -99,7 +92,6 @@ const experienceObserver = new IntersectionObserver((entries, observer) => {
 experienceCards.forEach(card => {
   experienceObserver.observe(card);
 });
-// Fade in para las tarjetas de certificaciones
 const certificationCards = document.querySelectorAll('.certification-card');
 const certificationObserver = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
