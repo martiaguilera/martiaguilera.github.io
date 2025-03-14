@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Marti Aguilera</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <!-- BOXICONS para iconos en la navbar -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Menú lateral (sidebar) en la izquierda -->
+  <div class="sidebar">
+    <ul>
+      <li>
+        <a href="#sobre-mi">
+          <i class='bx bx-user'></i>
+          <span>Sobre mí</span>
+        </a>
+      </li>
+      <li>
+        <a href="#proyectos">
+          <i class='bx bx-briefcase'></i>
+          <span>Proyectos</span>
+        </a>
+      </li>
+      <li>
+        <a href="#experiencia">
+          <i class='bx bx-book'></i>
+          <span>Formación</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Burbujas decorativas en los laterales -->
+  <div class="circulos">
+    <svg class="circulo circulo1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <path class="path" d="M46.2,-11.4C52.1,3.1,43.7,25.8,27.5,37.5C11.4,49.1,-12.6,49.7,-32.6,36.9C-52.7,24.2,-69,-1.7,-62.9,-16.5C-56.9,-31.3,-28.4,-34.8,-4.1,-33.5C20.2,-32.1,40.3,-25.9,46.2,-11.4Z" transform="translate(100 100)" />
+    </svg>
+    <svg class="circulo circulo2" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <path class="path" d="M38.2,-51.3C46.1,-38.9,46.7,-23.6,50.9,-7.8C55.1,8,62.8,24.4,59.4,38.1C56,51.7,41.4,62.7,25.2,68.1C9,73.6,-8.9,73.4,-23.5,67C-38.1,60.6,-49.4,47.8,-51.7,34.4C-53.9,21,-47.1,7,-44.6,-8C-42.1,-23,-44,-38.9,-37.3,-51.5C-30.6,-64,-15.3,-73.3,-0.1,-73.2C15.2,-73.1,30.3,-63.7,38.2,-51.3Z" transform="translate(100 100)" />
+    </svg>
+    <svg class="circulo circulo3" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <path class="path" d="M48.9,-67.7C64,-66.4,77.5,-53.9,75.6,-39.8C73.8,-25.8,56.8,-10,48.3,2.6C39.8,15.3,39.7,24.8,35.5,32C31.3,39.3,22.8,44.1,14.3,44.7C5.9,45.3,-2.6,41.7,-15.1,42.2C-27.6,42.8,-44.1,47.6,-52.1,42.7C-60.1,37.8,-59.7,23.2,-55.4,11.8C-51.1,0.4,-42.8,-7.7,-36.9,-15.3C-31,-23,-27.5,-30.2,-21.8,-35.9C-16,-41.5,-8,-45.5,4.4,-52.4C16.9,-59.3,33.8,-69.1,48.9,-67.7Z" transform="translate(100 100)" />
+    </svg>
+    <svg class="circulo circulo4" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <path class="path" d="M47.7,21.4C38.6,43.3,-8,37.4,-22.2,12.6C-36.4,-12.3,-18.2,-56,5.1,-53.1C28.4,-50.1,56.8,-0.5,47.7,21.4Z" transform="translate(100 100)" />
+    </svg>
+  </div>
+
+  <!-- Email copiar al portapapeles -->
+  <div class="email-container">
+    <span id="email">martiaaguilera@proton.me</span>
+    <span id="copy-status">📋 copy</span>
+  </div>
+
+  <!-- Botón modo claro/oscuro -->
+  <button id="theme-toggle" class="theme-toggle">Modo claro / oscuro</button>
+
+  <!-- Sección principal (Hero) -->
+  <div class="container">
+    <h1 class="typing">Hola, soy Martí</h1>
+    <p>Estudiante de 2º SMR especializado en desarrollo web y programación.</p>
+  </div>
+
+  <!-- Sección SOBRE MÍ -->
+  <div class="about-me container" id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>
+      ¡Hola! Soy Martí, técnico en sistemas microinformáticos con una profunda pasión por la programación. Desde siempre, me ha fascinado cómo la tecnología puede transformar nuestro entorno y mejorar la forma en que interactuamos con el mundo. Mi experiencia en la gestión y mantenimiento de sistemas se complementa con un constante interés por aprender y experimentar con nuevas técnicas.
+    </p>
+    <p>
+      Me impulsa la curiosidad por descubrir soluciones creativas a problemas cotidianos y optimizar procesos de manera eficiente, buscando siempre un equilibrio entre robustez técnica e innovación.
+    </p>
+  </div>
+
+  <!-- Sección PROYECTOS (ambas tarjetas en el mismo contenedor) -->
+  <div class="container" id="proyectos">
+    <h2>Proyectos</h2>
+    <div class="project-card" id="sws">
+      <h3>Simple Web Server (SWS)</h3>
+      <p>
+        Simple Web Server (SWS) es una herramienta liviana que te permite convertir cualquier carpeta en un servidor web local en cuestión de segundos. Diseñada para desarrolladores y estudiantes, ofrece una interfaz gráfica para seleccionar carpetas y una consola en tiempo real para monitorear el estado del servidor.
+      </p>
+      <ul class="project-features">
+        <li>Servidor web local en segundos</li>
+        <li>Compatible con archivos estáticos (HTML, CSS, JS)</li>
+        <li>Interfaz gráfica intuitiva</li>
+        <li>Consola integrada para monitoreo</li>
+        <li>Sin dependencias adicionales</li>
+      </ul>
+      <a class="project-link" href="https://github.com/sikepg/SWSMARTI" target="_blank">Ver en GitHub</a>
+      <div class="project-languages">
+        <span>Python</span>
+      </div>
+    </div>
+    <div class="project-card" id="cv">
+      <h3>CV Web</h3>
+      <p>
+        Este proyecto es mi CV online actual, desarrollado para presentar mi perfil de manera interactiva y moderna. Utiliza HTML, CSS y JavaScript para ofrecer una experiencia dinámica y responsiva.
+      </p>
+      <ul class="project-features">
+        <li>Diseño responsivo</li>
+        <li>Interactividad con JavaScript</li>
+        <li>Estilo minimalista y moderno</li>
+      </ul>
+      <a class="project-link" href="#" target="_blank">Ver en GitHub</a>
+      <div class="project-languages">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JS</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección de Experiencia Laboral -->
+  <div class="container experiencia" id="experiencia">
+    <h2>Experiencia Laboral</h2>
+    <div class="experience-cards">
+      <div class="card">
+        <h3>MRP Computer</h3>
+        <h4>Técnico de hardware/software (Prácticas)</h4>
+        <span class="date-location">sept. 2024 - actualidad · Igualada, Cataluña, España</span>
+        <p>
+          Realizo prácticas en MRP Computer, centrándome en el mantenimiento de hardware, instalación de sistemas operativos y soporte técnico.
+        </p>
+        <ul class="experience-aptitudes">
+          <li>Mantenimiento de hardware</li>
+          <li>Instalación y configuración de sistemas operativos</li>
+          <li>Soporte técnico</li>
+          <li>Resolución de incidencias</li>
+          <li>Conocimientos de redes</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Camins de Vent, Vols en Globus</h3>
+        <h4>Ayudante en Empresa Aeronáutica de Globos</h4>
+        <span class="date-location">nov. 2023 - actualidad · Igualada, Cataluña, España</span>
+        <p>
+          Trabajo como ayudante en operaciones de vuelo en globo, colaborando en la preparación de equipos, asistencia durante las operaciones y coordinación logística para garantizar la seguridad y una experiencia satisfactoria.
+        </p>
+        <ul class="experience-aptitudes">
+          <li>Montaje y preparación de globos</li>
+          <li>Seguridad en operaciones de vuelo</li>
+          <li>Atención al cliente</li>
+          <li>Logística y coordinación</li>
+          <li>Trabajo en equipo</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<!-- Sección de Licencias y Certificaciones -->
+<div class="container certificaciones" id="certificaciones">
+  <h2>Licencias y Certificaciones</h2>
+  <div class="certifications-cards">
+    <!-- Certificado 1: Curso de HTML5 y CSS3 -->
+    <div class="certification-card">
+      <img src="ruta_del_logotipo_openwebinars.png" alt="OpenWebinars Logo" class="cert-logo">
+      <h3>Curso de HTML5 y CSS3</h3>
+      <span class="cert-date">Expedición: feb. 2025</span>
+      <p>Aptitudes: Hojas de estilos en cascada (CSS)</p>
+      <a class="cert-link" href="certificado_curso_de_html5_y_css3.pdf" target="_blank">Mostrar credencial</a>
+    </div>
+    <!-- Certificado 2: Curso de Hacking web -->
+    <div class="certification-card">
+      <img src="ruta_del_logotipo_openwebinars.png" alt="OpenWebinars Logo" class="cert-logo">
+      <h3>Curso de Hacking web</h3>
+      <span class="cert-date">Expedición: feb. 2025</span>
+      <p>Aptitudes: Hacking Web</p>
+      <a class="cert-link" href="certificado_curso_de_hacking_web.pdf" target="_blank">Mostrar credencial</a>
+    </div>
+    <!-- Certificado 3: Curso de maquetación web con CSS -->
+    <div class="certification-card">
+      <img src="ruta_del_logotipo_openwebinars.png" alt="OpenWebinars Logo" class="cert-logo">
+      <h3>Curso de maquetación web con CSS</h3>
+      <span class="cert-date">Expedición: oct. 2024</span>
+      <p>Aptitudes: Hojas de estilos en cascada (CSS)</p>
+      <a class="cert-link" href="certificado_curso_de_maquetacion_web_con_css.pdf" target="_blank">Mostrar credencial</a>
+    </div>
+    <!-- Certificado 4: Onboarding de Becas OpenWebinars -->
+    <div class="certification-card">
+      <img src="ruta_del_logotipo_openwebinars.png" alt="OpenWebinars Logo" class="cert-logo">
+      <h3>Onboarding de Becas OpenWebinars</h3>
+      <span class="cert-date">Expedición: oct. 2024</span>
+      <a class="cert-link" href="certificado_onboarding_de_becas_openwebinars.pdf" target="_blank">Mostrar credencial</a>
+    </div>
+    <!-- Certificado 5: Python -->
+    <div class="certification-card">
+      <img src="/img/openwebinars_logo.png" alt="OpenWebinars Logo" class="cert-logo">
+      <h3>Python</h3>
+      <span class="cert-date">Expedición: oct. 2024</span>
+      <p>Aptitudes: Python</p>
+      <a class="cert-link" href="certificado_python.pdf" target="_blank">Mostrar credencial</a>
+    </div>
+    <!-- Certificado 6: Introduction to Cybersecurity -->
+    <div class="certification-card">
+      <img src="/img/cisco_logo.png" alt="Cisco Logo" class="cert-logo">
+      <h3>Introduction to Cybersecurity</h3>
+      <span class="cert-date">Expedición: jul. 2024</span>
+      <p>Aptitudes: Ciberseguridad</p>
+      <a class="cert-link" href="https://www.credly.com/badges/a57e36b5-2259-4268-98f8-2bd791c33307/linked_in_profile" target="_blank">Mostrar credencial</a>
+    </div>
+  </div>
+</div>
+
+  <!-- Iconos sociales (lateral izquierdo) -->
+  <div class="social-fixed">
+    <a href="https://www.linkedin.com/in/martiaaguilera/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg" viewBox="0 0 16 16">
+        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+      </svg>
+    </a>
+    <a href="https://github.com/sikepg" target="_blank" rel="noopener noreferrer" title="GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg" viewBox="0 0 16 16">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+      </svg>
+    </a>
+    <a href="https://stackoverflow.com/users/24769913/sike" target="_blank" rel="noopener noreferrer" title="Stack Overflow">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg stackoverflow-icon" viewBox="0 0 512 512">
+        <path d="M494.73 276.27L393.17 308.67c-3.07 1.13-6.06 0-8.12-2.68-2.07-2.69-1.14-5.84 1.27-7.43l83.07-40.67c.51-.25 1.02-.51 1.54-.76l-93.43-117.05c-1.14-1.43-3.07-1.79-4.75-.89-1.68.89-2.68 2.68-2.68 4.68v151.32c-31.52-7.26-66.77-11.4-104.11-11.4-17.33 0-34.2 1.57-50.47 4.67v-34.88c0-2.67-1.71-5.08-4.13-5.82-2.41-.74-4.95-.74-7.37 0-2.42.74-4.14 3.15-4.14 5.82v52.35c-31.17 8.74-55.75 36.65-55.75 70.91 0 40.42 32.95 73.2 73.58 73.2 18.82 0 36.35-7.02 48.73-18.1 1.12-.94 2.29-1.8 3.55-2.54l.03-.02 70.53-51.47c1.69-1.23 1.69-3.65 0-4.88l-70.53-51.47c-1.26-.75-2.43-1.61-3.55-2.54-12.38-11.08-29.91-18.1-48.73-18.1-40.64 0-73.58 32.78-73.58 73.2 0 34.26 24.58 62.17 55.75 70.91v52.35c0 2.67 1.72 5.08 4.14 5.82 2.42.74 5 .74 7.37 0 2.42-.74 4.13-3.15 4.13-5.82v-34.88c16.27 3.1 33.14 4.67 50.47 4.67 37.34 0 72.59-4.14 104.11-11.4v151.32c0 2-1 3.79-2.68 4.68-1.69.89-3.62.53-4.75-.89L494.73 276.27zM80 48h352v48H80V48z"/>
+      </svg>
+    </a>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
