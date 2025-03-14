@@ -6,29 +6,21 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
-
-/* Contenedor principal */
 .container {
   padding: 50px;
   max-width: 900px;
   margin: auto;
   position: relative;
   z-index: 2;
-  margin-left: 300px;  /* Espacio para el menú a la izquierda */
-  margin-right: 120px; /* Espacio para el menú a la derecha */
+  margin-left: 300px;  
+  margin-right: 120px; 
 }
-
-/* Títulos de secciones dentro de contenedores */
 .container h2 {
-  color: #00e676; /* Color verde por defecto para h2 */
+  color: #00e676; 
 }
-
-/* Refuerzo para el título "Proyectos" */
 #proyectos h2 {
   color: #00e676 !important;
 }
-
-/* Botón modo claro/oscuro */
 .theme-toggle {
   position: absolute;
   top: 20px;
@@ -45,37 +37,29 @@ body {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   z-index: 9999;
 }
-
 .theme-toggle:hover {
   background-color: #00e676;
   color: #121212;
 }
-
 .light-mode {
   background-color: #f0f0f0;
   color: #121212;
 }
-
 .light-mode .theme-toggle {
   background-color: #e0e0e0;
   color: #121212;
   border-color: #121212;
 }
-
 .light-mode .theme-toggle:hover {
   background-color: #121212;
   color: #e0e0e0;
 }
-
 .light-mode h1 {
   color: #00865c;
 }
-
 .light-mode .typing {
   border-right-color: #00865c;
 }
-
-/* Email Container */
 .email-container {
   position: absolute;
   top: 20px;
@@ -86,29 +70,23 @@ body {
   gap: 8px;
   z-index: 999;
 }
-
 #email {
   color: #00e676;
   cursor: pointer;
   transition: opacity 0.3s;
 }
-
 #email:hover {
   opacity: 0.7;
 }
-
 #copy-status {
   color: #00e676;
   font-size: 0.9rem;
   user-select: none;
   visibility: hidden;
 }
-
 .email-container:hover #copy-status {
   visibility: visible;
 }
-
-/* Burbujas decorativas */
 .circulos {
   position: fixed;
   width: 100%;
@@ -119,14 +97,12 @@ body {
   filter: blur(40px);
   animation: circulo1 50s linear infinite both;
 }
-
 .circulos .circulo {
   position: absolute;
   width: 50%;
   height: 50%;
   animation: circulo1 50s linear infinite both;
 }
-
 .circulos .circulo1 {
   top: 0%;
   left: 0%;
@@ -143,7 +119,6 @@ body {
   bottom: 0%;
   right: 0%;
 }
-
 .circulos .circulo1 .path {
   fill: #2e8b57;
 }
@@ -156,7 +131,6 @@ body {
 .circulos .circulo4 .path {
   fill: rgb(0, 59, 155);
 }
-
 @keyframes circulo1 {
   from {
     transform: rotate(0deg) scale(2);
@@ -165,13 +139,10 @@ body {
     transform: rotate(360deg) scale(2);
   }
 }
-
-/* Efectos de tipeo */
 h1 {
   font-size: 2rem;
   color: #00e676;
 }
-
 .typing {
   border-right: .1em solid #00e676;
   white-space: normal;
@@ -179,44 +150,34 @@ h1 {
   width: auto;
   animation: typing 3.5s steps(40, end) forwards, blink .8s infinite;
 }
-
 @keyframes typing {
   from { width: 0; }
   to { width: 100%; }
 }
-
 @keyframes blink {
   from, to { border-color: transparent; }
   50% { border-color: #00e676; }
 }
-
-/* Sección "Sobre mí" */
 .about-me {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
-
 .about-me.visible {
   opacity: 1;
   transform: translateY(0);
 }
-
 .about-me h2 {
   color: #00e676;
   margin-bottom: 20px;
 }
-
 .about-me p {
   line-height: 1.6;
   margin-bottom: 15px;
 }
-
-/* Sección de Proyectos */
 #proyectos {
   margin-top: 50px;
 }
-
 .project-card {
   background: rgba(0, 0, 0, 0.6);
   padding: 20px;
@@ -226,34 +187,29 @@ h1 {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1s ease-out, transform 1s ease-out;
+  position: relative;
 }
-
 .project-card.visible {
   opacity: 1;
   transform: translateY(0);
 }
-
 .project-card h3 {
   color: #00e676;
   margin-bottom: 10px;
 }
-
 .project-card p {
   line-height: 1.6;
   margin-bottom: 15px;
 }
-
 .project-features {
   list-style: disc;
   margin-left: 20px;
   margin-bottom: 15px;
 }
-
 .project-features li {
   margin-bottom: 5px;
   color: #e0e0e0;
 }
-
 .project-link {
   display: inline-block;
   text-decoration: none;
@@ -263,11 +219,9 @@ h1 {
   border-radius: 4px;
   transition: background-color 0.3s;
 }
-
 .project-link:hover {
   background-color: #00865c;
 }
-
 .project-languages {
   position: absolute;
   bottom: 10px;
@@ -278,152 +232,123 @@ h1 {
   font-size: 10px;
   color: #00e676;
 }
-
-/* Sección de Formación */
 #formacion {
-  scroll-margin-top: 80px; /* Para que el enlace del menú funcione correctamente */
+  scroll-margin-top: 80px; 
 }
-
 .formacion {
   margin-top: 50px;
 }
-
-/* Sección de Experiencia Laboral */
 .experiencia {
   margin-top: 50px;
 }
-
 .experiencia h2 {
   color: #00e676;
   margin-bottom: 20px;
 }
-
-/* Tarjetas de experiencia laboral */
 .experience-cards {
   display: flex;
   gap: 20px;
   justify-content: space-between;
-  flex-wrap: nowrap; /* Evita que pasen a la siguiente línea */
+  flex-wrap: nowrap; 
 }
-
 .experience-cards .card {
   background: rgba(0, 0, 0, 0.6);
   padding: 20px;
   border-radius: 8px;
-  width: calc(50% - 10px); /* Cada tarjeta ocupa la mitad del espacio */
+  width: calc(50% - 10px); 
   box-shadow: 0 8px 16px rgba(0,0,0,0.4);
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
-
 .experience-cards .card.visible {
   opacity: 1;
   transform: translateY(0);
 }
-
 .experience-cards .card h3 {
   color: #00e676;
   margin-bottom: 5px;
 }
-
 .experience-cards .card h4 {
   font-size: 1rem;
   margin-bottom: 10px;
   color: #e0e0e0;
 }
-
 .date-location {
   display: block;
   font-size: 0.9rem;
   color: #999;
   margin-bottom: 10px;
 }
-
 .experience-cards .card p {
   line-height: 1.6;
   margin-bottom: 15px;
 }
-
 .experience-aptitudes {
   list-style: disc;
   margin-left: 20px;
 }
-
 .experience-aptitudes li {
   margin-bottom: 5px;
   font-size: 0.9rem;
   color: #e0e0e0;
 }
-
-/* MENÚ LATERAL: Modificaciones para el estilo del menú */
 .sidebar {
   position: fixed;
   top: 50%;
   left: 20px;
   transform: translateY(-50%);
-  width: 80px; /* Más ancho para mayor legibilidad */
-  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  width: 80px;
+  background: rgba(0, 0, 0, 0.5);
   padding: 10px 0;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.5);
   z-index: 10000;
   transition: background 0.3s;
 }
-
 .sidebar:hover {
   background: rgba(0, 0, 0, 0.7);
 }
-
 .sidebar ul {
   list-style: none;
   margin: 0;
   padding: 0;
   width: 100%;
 }
-
 .sidebar ul li {
   margin: 15px 0;
   width: 100%;
 }
-
 .sidebar ul li a {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-decoration: none;
   font-size: 12px;
-  color: #00e676; /* Color verde */
+  color: #00e676;
   transition: color 0.3s;
   width: 100%;
 }
-
 .sidebar ul li a:link,
 .sidebar ul li a:visited {
   color: #00e676;
 }
-
 .sidebar ul li a:hover {
   color: #fff;
 }
-
 .sidebar ul li a i {
   font-size: 24px;
   margin-bottom: 4px;
   transition: transform 0.3s;
 }
-
 .sidebar ul li a:hover i {
   transform: scale(1.1);
 }
-
 .sidebar ul li a span {
   display: block;
   text-align: center;
   line-height: 1.2;
 }
-
-/* Menú lateral a la derecha (si se usara) */
 .menu-sidebar {
   position: sticky;
   top: 150px;
@@ -434,17 +359,14 @@ h1 {
   align-items: center;
   z-index: 10000;
 }
-
 .menu-sidebar ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 .menu-sidebar ul li {
   margin: 15px 0;
 }
-
 .menu-sidebar ul li a {
   display: flex;
   flex-direction: column;
@@ -454,21 +376,16 @@ h1 {
   font-size: 12px;
   transition: 0.3s;
 }
-
 .menu-sidebar ul li a:hover {
   color: #fff;
 }
-
 .menu-sidebar ul li a i {
   font-size: 22px;
   margin-bottom: 4px;
 }
-
 .menu-sidebar ul li a span {
   line-height: 1;
 }
-
-/* Iconos sociales a la derecha */
 .social-fixed {
   position: fixed;
   top: 50%;
@@ -479,7 +396,6 @@ h1 {
   gap: 15px;
   z-index: 10000;
 }
-
 .social-fixed a {
   display: inline-flex;
   width: 40px;
@@ -493,59 +409,16 @@ h1 {
   color: #e0e0e0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
-
 .social-fixed a:hover {
   transform: translateY(-5px) scale(1.1);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
 }
-
 .social-fixed a svg,
 .social-fixed a img {
   width: 20px;
   height: 20px;
   fill: currentColor;
 }
-
-/* Responsive */
-@media (max-width: 900px) {
-  .container {
-    padding: 20px;
-    margin-left: 80px;
-    margin-right: 80px;
-  }
-  
-  h1 {
-    font-size: 1.8rem;
-  }
-  
-  .typing {
-    font-size: 1.2rem;
-    animation: none;
-    border-right: none;
-  }
-  
-  .theme-toggle {
-    position: static;
-    display: block;
-    width: 100%;
-    margin: 10px auto;
-    text-align: center;
-  }
-  
-  .email-container {
-    position: static;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-  }
-  
-  .sidebar {
-    width: 60px;
-  }
-}
-/* Sección de Licencias y Certificaciones */
 .certificaciones {
   margin-top: 50px;
 }
@@ -555,57 +428,47 @@ h1 {
   margin-bottom: 20px;
   text-align: center;
 }
-
 .certifications-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 100px; /* Ajusta a tu gusto */
   justify-items: center;
 }
-
-
-/* Tarjeta individual */
 .certification-card {
   background: rgba(0, 0, 0, 0.7);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.5);
-  width: 100%; /* Ocupa todo el espacio de la columna */
-  max-width: 280px; /* Ajusta para no crecer demasiado */
+  width: 100%;
+  max-width: 280px;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1s ease-out, transform 1s ease-out;
   text-align: center;
 }
-
 .certification-card.visible {
   opacity: 1;
   transform: translateY(0);
 }
-
 .certification-card .cert-logo {
   max-width: 50px;
   margin-bottom: 10px;
 }
-
 .certification-card h3 {
   color: #00e676;
   margin-bottom: 10px;
 }
-
 .cert-date {
   display: block;
   font-size: 0.9rem;
   color: #999;
   margin-bottom: 10px;
 }
-
 .certification-card p {
   line-height: 1.6;
   margin-bottom: 10px;
   font-size: 0.95rem;
 }
-
 .cert-link {
   display: inline-block;
   text-decoration: none;
@@ -615,14 +478,52 @@ h1 {
   border-radius: 4px;
   transition: background-color 0.3s;
 }
-
 .cert-link:hover {
   background-color: #00865c;
 }
-
-
-.cert-logo {
-  max-width: 50px;
-  display: block;
-  margin-bottom: 10px;
+@media (max-width: 900px) {
+  .container {
+    padding: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  .typing {
+    font-size: 1.2rem;
+    animation: none;
+    border-right: none;
+  }
+  .theme-toggle {
+    position: relative; /* Cambiado para móvil */
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+    z-index: 9999;
+  }
+  .email-container {
+    position: static;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  .sidebar {
+    width: 60px;
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  .certifications-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .certifications-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
