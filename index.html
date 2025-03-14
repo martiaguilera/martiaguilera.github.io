@@ -5,12 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio | Marti Aguilera</title>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-  <!-- BOXICONS para iconos en la navbar -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Menú lateral (sidebar) en la izquierda -->
   <div class="sidebar">
     <ul>
       <li>
@@ -33,8 +31,6 @@
       </li>
     </ul>
   </div>
-
-  <!-- Burbujas decorativas en los laterales -->
   <div class="circulos">
     <svg class="circulo circulo1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
       <path class="path" d="M46.2,-11.4C52.1,3.1,43.7,25.8,27.5,37.5C11.4,49.1,-12.6,49.7,-32.6,36.9C-52.7,24.2,-69,-1.7,-62.9,-16.5C-56.9,-31.3,-28.4,-34.8,-4.1,-33.5C20.2,-32.1,40.3,-25.9,46.2,-11.4Z" transform="translate(100 100)" />
@@ -50,22 +46,15 @@
     </svg>
   </div>
 
-  <!-- Email copiar al portapapeles -->
   <div class="email-container">
     <span id="email">martiaaguilera@proton.me</span>
     <span id="copy-status">📋 copy</span>
   </div>
-
-  <!-- Botón modo claro/oscuro -->
   <button id="theme-toggle" class="theme-toggle">Modo claro / oscuro</button>
-
-  <!-- Sección principal (Hero) -->
   <div class="container">
     <h1 class="typing">Hola, soy Martí</h1>
     <p>Estudiante de 2º SMR especializado en desarrollo web y programación.</p>
   </div>
-
-  <!-- Sección SOBRE MÍ -->
   <div class="about-me container" id="sobre-mi">
     <h2>Sobre mí</h2>
     <p>
@@ -75,8 +64,6 @@
       Me impulsa la curiosidad por descubrir soluciones creativas a problemas cotidianos y optimizar procesos de manera eficiente, buscando siempre un equilibrio entre robustez técnica e innovación.
     </p>
   </div>
-
-  <!-- Sección PROYECTOS (ambas tarjetas en el mismo contenedor) -->
   <div class="container" id="proyectos">
     <h2>Proyectos</h2>
     <div class="project-card" id="sws">
@@ -114,8 +101,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Sección de Experiencia Laboral -->
   <div class="container experiencia" id="experiencia">
     <h2>Experiencia Laboral</h2>
     <div class="experience-cards">
@@ -151,61 +136,52 @@
       </div>
     </div>
   </div>
-<!-- Sección de Licencias y Certificaciones -->
-<div class="container certificaciones" id="certificaciones">
-  <h2>Licencias y Certificaciones</h2>
-  <div class="certifications-cards">
-    <!-- Certificado 1: Curso de HTML5 y CSS3 -->
-    <div class="certification-card">
-      <img src="/img/openwebinars_logo.png" alt="OpenWebinars Logo" class="cert-logo">
-      <h3>Curso de HTML5 y CSS3</h3>
-      <span class="cert-date">Expedición: feb. 2025</span>
-      <p>Aptitudes: Hojas de estilos en cascada (CSS)</p>
-      <a class="cert-link" href="https://openwebinars.net/cert/g7p0" target="_blank">Mostrar credencial</a>
-    </div>
-    <!-- Certificado 2: Curso de Hacking web -->
-    <div class="certification-card">
-      <img src="/img/openwebinars_logo.png" alt="OpenWebinars Logo" class="cert-logo">
-      <h3>Curso de Hacking web</h3>
-      <span class="cert-date">Expedición: feb. 2025</span>
-      <p>Aptitudes: Hacking Web</p>
-      <a class="cert-link" href="https://openwebinars.net/cert/tm01" target="_blank">Mostrar credencial</a>
-    </div>
-    <!-- Certificado 3: Curso de maquetación web con CSS -->
-    <div class="certification-card">
-      <img src="/img/openwebinars_logo.png" alt="OpenWebinars Logo" class="cert-logo">
-      <h3>Curso de maquetación web con CSS</h3>
-      <span class="cert-date">Expedición: oct. 2024</span>
-      <p>Aptitudes: Hojas de estilos en cascada (CSS)</p>
-      <a class="cert-link" href="https://openwebinars.net/cert/BxZS" target="_blank">Mostrar credencial</a>
-    </div>
-    <!-- Certificado 4: Onboarding de Becas OpenWebinars -->
-    <div class="certification-card">
-      <img src="/img/openwebinars_logo.png" alt="OpenWebinars Logo" class="cert-logo">
-      <h3>Onboarding de Becas OpenWebinars</h3>
-      <span class="cert-date">Expedición: oct. 2024</span>
-      <a class="cert-link" href="https://openwebinars.net/cert/hcvA" target="_blank">Mostrar credencial</a>
-    </div>
-    <!-- Certificado 5: Python -->
-    <div class="certification-card">
-      <img src="/img/openwebinars_logo.png" alt="OpenWebinars Logo" class="cert-logo">
-      <h3>Python</h3>
-      <span class="cert-date">Expedición: oct. 2024</span>
-      <p>Aptitudes: Python</p>
-      <a class="cert-link" href="https://openwebinars.net/cert/t5sW" target="_blank">Mostrar credencial</a>
-    </div>
-    <!-- Certificado 6: Introduction to Cybersecurity -->
-    <div class="certification-card">
-      <img src="/img/cisco_logo.png" alt="Cisco Logo" class="cert-logo">
-      <h3>Introduction to Cybersecurity</h3>
-      <span class="cert-date">Expedición: jul. 2024</span>
-      <p>Aptitudes: Ciberseguridad</p>
-      <a class="cert-link" href="https://www.credly.com/badges/a57e36b5-2259-4268-98f8-2bd791c33307/linked_in_profile" target="_blank">Mostrar credencial</a>
+  <div class="container certificaciones" id="certificaciones">
+    <h2>Licencias y Certificaciones</h2>
+    <div class="certifications-cards">
+      <div class="certification-card">
+        <img src="/img/openwebinars_logo.png" alt="OpenWebinars Logo" class="cert-logo">
+        <h3>Curso de HTML5 y CSS3</h3>
+        <span class="cert-date">Expedición: feb. 2025</span>
+        <p>Aptitudes: Hojas de estilos en cascada (CSS)</p>
+        <a class="cert-link" href="https://openwebinars.net/cert/g7p0" target="_blank">Mostrar credencial</a>
+      </div>
+      <div class="certification-card">
+        <img src="/img/openwebinars_logo.png" alt="OpenWebinars Logo" class="cert-logo">
+        <h3>Curso de Hacking web</h3>
+        <span class="cert-date">Expedición: feb. 2025</span>
+        <p>Aptitudes: Hacking Web</p>
+        <a class="cert-link" href="https://openwebinars.net/cert/tm01" target="_blank">Mostrar credencial</a>
+      </div>
+      <div class="certification-card">
+        <img src="/img/openwebinars_logo.png" alt="OpenWebinars Logo" class="cert-logo">
+        <h3>Curso de maquetación web con CSS</h3>
+        <span class="cert-date">Expedición: oct. 2024</span>
+        <p>Aptitudes: Hojas de estilos en cascada (CSS)</p>
+        <a class="cert-link" href="https://openwebinars.net/cert/BxZS" target="_blank">Mostrar credencial</a>
+      </div>
+      <div class="certification-card">
+        <img src="/img/openwebinars_logo.png" alt="OpenWebinars Logo" class="cert-logo">
+        <h3>Onboarding de Becas OpenWebinars</h3>
+        <span class="cert-date">Expedición: oct. 2024</span>
+        <a class="cert-link" href="https://openwebinars.net/cert/hcvA" target="_blank">Mostrar credencial</a>
+      </div>
+      <div class="certification-card">
+        <img src="/img/openwebinars_logo.png" alt="OpenWebinars Logo" class="cert-logo">
+        <h3>Python</h3>
+        <span class="cert-date">Expedición: oct. 2024</span>
+        <p>Aptitudes: Python</p>
+        <a class="cert-link" href="https://openwebinars.net/cert/t5sW" target="_blank">Mostrar credencial</a>
+      </div>
+      <div class="certification-card">
+        <img src="/img/cisco_logo.png" alt="Cisco Logo" class="cert-logo">
+        <h3>Introduction to Cybersecurity</h3>
+        <span class="cert-date">Expedición: jul. 2024</span>
+        <p>Aptitudes: Ciberseguridad</p>
+        <a class="cert-link" href="https://www.credly.com/badges/a57e36b5-2259-4268-98f8-2bd791c33307/linked_in_profile" target="_blank">Mostrar credencial</a>
+      </div>
     </div>
   </div>
-</div>
-
-  <!-- Iconos sociales (lateral izquierdo) -->
   <div class="social-fixed">
     <a href="https://www.linkedin.com/in/martiaaguilera/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg" viewBox="0 0 16 16">
