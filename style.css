@@ -4,6 +4,10 @@ body {
   color: #e0e0e0;
   margin: 0;
   padding: 0;
+  /* Add the hide class to all elements in the body by default */
+}
+.hide {
+  z-index: -1;
   overflow-x: hidden;
 }
 .container {
@@ -545,22 +549,31 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #121212; /* Opaque dark background */
-  color: #e0e0e0;
-  z-index: 10000; /* Ensure it's on top of everything */
+  background-color: rgba(0, 0, 0, 0.8); /* Opaque dark background */
+  color: #00bfff;
+  z-index: 1000; /* Ensure it's on top of everything */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 20px;
-  font-family: 'Fira Code', monospace; /* Using the project's font */
+  font-family: Helvetica, Arial, Verdana, sans-serif; /* Changed to a more modern sans-serif font */
 }
 #mobile-message h2 {
-  color: #00e676; /* Highlight the heading */
+  color: #ADD8E6; /* Highlight the heading */
   font-weight: bold; /* Make text bold */
   font-size: 3em; /* Increase font size */
-  animation: fadeInText 1.5s ease-out forwards; /* Animation for text */
+  animation: fadeInText 1.5s ease-out forwards, textColorAnimation 2s infinite ease-in-out; /* Animation for text */
+}
+
+@keyframes textColorAnimation {
+  0% {
+    color: #ADD8E6; /* Azul claro */
+  }
+  50% {
+    color: #0077CC; /* Azul más intenso */
+  }
 }
 #mobile-message p {
   font-size: 5em; /* Increase emoji size */
