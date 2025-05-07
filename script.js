@@ -1,23 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Check if the device is mobile
-  const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-
-  if (isMobile) {
-    const mobileMessageDiv = document.createElement('div');
-    mobileMessageDiv.id = 'mobile-message';
-    mobileMessageDiv.style.position = 'fixed';
-    mobileMessageDiv.style.top = '50%';
-    mobileMessageDiv.style.left = '50%';
-    mobileMessageDiv.style.transform = 'translate(-50%, -50%)';
-    mobileMessageDiv.style.textAlign = 'center';
-    mobileMessageDiv.style.backgroundColor = 'white'; 
-    mobileMessageDiv.style.padding = '20px';
-    mobileMessageDiv.style.border = '2px solid black'; 
-    mobileMessageDiv.style.zIndex = '1000'; // To ensure it's on top
-    mobileMessageDiv.innerHTML = '<h2>Esta página solo está disponible en ordenador</h2><p style="font-size: 50px;">💻</p>'; 
-    document.body.appendChild(mobileMessageDiv);
-  }
-
   const messages = [
     "console.log('Hola, soy Martí');",
     "console.log('Estudiante de 2º SMR especializado en desarrollo web');",
