@@ -16,13 +16,35 @@
   <nav class="navbar">
     <div class="navbar-container">
       <a href="#hero" class="navbar-logo">MA</a>
-      <ul class="navbar-menu">
-        <li><a href="#work" class="nav-link">Trabajos</a></li>
-        <li><a href="#services" class="nav-link">Servicios</a></li>
-        <li><a href="#experience" class="nav-link">Experiencia</a></li>
-        <li><a href="#about" class="nav-link">Sobre Mí</a></li>
-        <li><a href="#contact" class="nav-link">Contacto</a></li>
+      
+      <ul class="navbar-menu" id="navbar-menu">
+        <li><a href="#work" class="nav-link" data-lang="nav-work">Trabajos</a></li>
+        <li><a href="#services" class="nav-link" data-lang="nav-services">Servicios</a></li>
+        <li><a href="#experience" class="nav-link" data-lang="nav-experience">Experiencia</a></li>
+        <li><a href="#about" class="nav-link" data-lang="nav-about">Sobre Mí</a></li>
+        <li><a href="#contact" class="nav-link" data-lang="nav-contact">Contacto</a></li>
       </ul>
+      
+      <!-- Hamburger Menu Toggle -->
+      <button class="hamburger" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    
+    <!-- Mobile Menu with Language Buttons -->
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="language-buttons-mobile" id="lang-buttons-mobile">
+        <button class="lang-btn active" data-lang="ca">Català</button>
+        <button class="lang-btn" data-lang="es">Español</button>
+        <button class="lang-btn" data-lang="en">English</button>
+      </div>
+      <a href="#work" class="nav-link" data-lang="nav-work">Trabajos</a>
+      <a href="#services" class="nav-link" data-lang="nav-services">Servicios</a>
+      <a href="#experience" class="nav-link" data-lang="nav-experience">Experiencia</a>
+      <a href="#about" class="nav-link" data-lang="nav-about">Sobre Mí</a>
+      <a href="#contact" class="nav-link" data-lang="nav-contact">Contacto</a>
     </div>
   </nav>
 
@@ -32,9 +54,9 @@
       <h1 class="hero-title">
         MARTÍ<br>AGUILERA
       </h1>
-      <p class="hero-subtitle">Creando Experiencias Digitales con Software, Diseño e Innovación.</p>
-      <p class="hero-meta">Desarrollador — Basado en Catalunya — ©2025</p>
-      <a href="#work" class="hero-btn">Ver Proyectos</a>
+      <p class="hero-subtitle typing-text" data-lang="hero-subtitle">Creando Experiencias Digitales con Software, Diseño e Innovación.</p>
+      <p class="hero-meta" data-lang="hero-meta">Desarrollador — Basado en Catalunya — ©2025</p>
+      <a href="#work" class="hero-btn" data-lang="hero-btn">Ver Proyectos</a>
     </div>
     
     <!-- Franja fluida con degradado cálido -->
@@ -60,18 +82,18 @@
 
   <!-- ===== PROJECTS SECTION ===== -->
   <section id="work" class="section-container">
-    <div class="section-title-sticky">Proyectos</div>
-    <h2 class="section-hero-title">Proyectos</h2>
+    <div class="section-title-sticky" data-lang="projects-sticky">Proyectos</div>
+    <h2 class="section-hero-title" data-lang="projects-title">Proyectos</h2>
     <div class="section-content">
       <div class="projects-grid">
         
         <!-- Project 1: Els Prats d'Or -->
         <article class="project-card fade-up">
           <div class="project-header">
-            <h3 class="project-name">Els Prats d'Or</h3>
-            <span class="project-badge">Stack Completo</span>
+            <h3 class="project-name" data-lang="project-1-name">Els Prats d'Or</h3>
+            <span class="project-badge" data-lang="project-1-badge">Stack Completo</span>
           </div>
-          <p class="project-description">
+          <p class="project-description" data-lang="project-1-desc">
             Tienda online completa para una granja local. Sistema full-stack con carrito de compras, gestión de productos en tiempo real y consultas dinámicas a base de datos.
           </p>
           <div class="project-tech">
@@ -89,10 +111,10 @@
         <!-- Project 2: Simple Web Server -->
         <article class="project-card fade-up">
           <div class="project-header">
-            <h3 class="project-name">Simple Web Server (SWS)</h3>
-            <span class="project-badge">Aplicación Desktop</span>
+            <h3 class="project-name" data-lang="project-2-name">Simple Web Server (SWS)</h3>
+            <span class="project-badge" data-lang="project-2-badge">Aplicación Desktop</span>
           </div>
-          <p class="project-description">
+          <p class="project-description" data-lang="project-2-desc">
             Aplicación Python que convierte cualquier carpeta en servidor web local. Interfaz gráfica intuitiva, portable y sin dependencias externas. Consola integrada para monitoreo.
           </p>
           <div class="project-tech">
@@ -108,10 +130,10 @@
         <!-- Project 3: Autoclicker -->
         <article class="project-card fade-up">
           <div class="project-header">
-            <h3 class="project-name">Autoclicker v1.0</h3>
-            <span class="project-badge">Utilidad</span>
+            <h3 class="project-name" data-lang="project-3-name">Autoclicker v1.0</h3>
+            <span class="project-badge" data-lang="project-3-badge">Utilidad</span>
           </div>
-          <p class="project-description">
+          <p class="project-description" data-lang="project-3-desc">
             Herramienta de automatización en Python con tecla de activación personalizada, intervalos configurables en milisegundos e interfaz simple y eficiente.
           </p>
           <div class="project-tech">
@@ -127,10 +149,10 @@
         <!-- Project 4: Portfolio Web -->
         <article class="project-card fade-up">
           <div class="project-header">
-            <h3 class="project-name">Portfolio Web Personal</h3>
-            <span class="project-badge">Este Sitio</span>
+            <h3 class="project-name" data-lang="project-4-name">Portfolio Web Personal</h3>
+            <span class="project-badge" data-lang="project-4-badge">Este Sitio</span>
           </div>
-          <p class="project-description">
+          <p class="project-description" data-lang="project-4-desc">
             Portfolio web personal mostrando proyectos, experiencia y formación académica. Diseño minimalista moderno con animaciones suaves y scroll interactivo.
           </p>
           <div class="project-tech">
@@ -149,37 +171,37 @@
 
   <!-- ===== SERVICES SECTION ===== -->
   <section id="services" class="section-container">
-    <div class="section-title-sticky">Servicios</div>
-    <h2 class="section-hero-title">Servicios</h2>
+    <div class="section-title-sticky" data-lang="services-sticky">Servicios</div>
+    <h2 class="section-hero-title" data-lang="services-title">Servicios</h2>
     <div class="section-content">
       <div class="services-intro">
-        <p>Fundador y CEO de <strong>NuviaDev</strong>, empresa especializada en creación de webs modernas para negocios locales y emprendimientos digitales.</p>
+        <p data-lang="services-intro">Fundador y CEO de <strong>NuviaDev</strong>, empresa especializada en creación de webs modernas para negocios locales y emprendimientos digitales.</p>
       </div>
       <div class="services-grid">
         <div class="service-card fade-up">
           <div class="service-icon">⚡</div>
-          <h3>Desarrollo Web a Medida</h3>
-          <p>Sitios web profesionales y funcionales adaptados a tus necesidades específicas.</p>
+          <h3 data-lang="service-1-title">Desarrollo Web a Medida</h3>
+          <p data-lang="service-1-desc">Sitios web profesionales y funcionales adaptados a tus necesidades específicas.</p>
         </div>
         <div class="service-card fade-up">
           <div class="service-icon">🎨</div>
-          <h3>Diseño UI/UX</h3>
-          <p>Interfaces intuitivas y atractivas que mejoran la experiencia del usuario.</p>
+          <h3 data-lang="service-2-title">Diseño UI/UX</h3>
+          <p data-lang="service-2-desc">Interfaces intuitivas y atractivas que mejoran la experiencia del usuario.</p>
         </div>
         <div class="service-card fade-up">
           <div class="service-icon">💻</div>
-          <h3>Desarrollo de Aplicaciones</h3>
-          <p>Apps desktop y utilitarios en Python, C, Java y más tecnologías.</p>
+          <h3 data-lang="service-3-title">Desarrollo de Aplicaciones</h3>
+          <p data-lang="service-3-desc">Apps desktop y utilitarios en Python, C, Java y más tecnologías.</p>
         </div>
         <div class="service-card fade-up">
           <div class="service-icon">🔧</div>
-          <h3>Consultoría Técnica para PYMES</h3>
-          <p>Asesoramiento en soluciones tecnológicas e infraestructura digital.</p>
+          <h3 data-lang="service-4-title">Consultoría Técnica para PYMES</h3>
+          <p data-lang="service-4-desc">Asesoramiento en soluciones tecnológicas e infraestructura digital.</p>
         </div>
         <div class="service-card fade-up">
           <div class="service-icon">🔌</div>
-          <h3>Integración y Optimización</h3>
-          <p>Integración de sistemas y optimización de procesos digitales existentes.</p>
+          <h3 data-lang="service-5-title">Integración y Optimización</h3>
+          <p data-lang="service-5-desc">Integración de sistemas y optimización de procesos digitales existentes.</p>
         </div>
       </div>
     </div>
@@ -187,18 +209,18 @@
 
   <!-- ===== EXPERIENCE SECTION ===== -->
   <section id="experience" class="section-container">
-    <div class="section-title-sticky">Experiencia</div>
-    <h2 class="section-hero-title">Experiencia</h2>
+    <div class="section-title-sticky" data-lang="experience-sticky">Experiencia</div>
+    <h2 class="section-hero-title" data-lang="experience-title">Experiencia</h2>
     <div class="section-content">
       <div class="experience-timeline">
         
         <!-- Experience 1: NuviaDev -->
         <article class="experience-item fade-up">
-          <div class="experience-date">2025 — Actualidad</div>
+          <div class="experience-date" data-lang="exp-1-date">2025 — Actualidad</div>
           <div class="experience-content">
-            <h3 class="experience-role">CEO & Cofundador</h3>
-            <p class="experience-company">NuviaDev</p>
-            <p class="experience-description">
+            <h3 class="experience-role" data-lang="exp-1-role">CEO & Cofundador</h3>
+            <p class="experience-company" data-lang="exp-1-company">NuviaDev</p>
+            <p class="experience-description" data-lang="exp-1-desc">
               Creación de webs personalizadas, diseño y desarrollo de proyectos digitales. Gestión completa de proyectos y relación con clientes en el ecosistema local.
             </p>
           </div>
@@ -206,11 +228,11 @@
 
         <!-- Experience 2: Camins de Vent -->
         <article class="experience-item fade-up">
-          <div class="experience-date">2023 — Actualidad</div>
+          <div class="experience-date" data-lang="exp-2-date">2023 — Actualidad</div>
           <div class="experience-content">
-            <h3 class="experience-role">Ayudante</h3>
-            <p class="experience-company">Camins de Vent (Vuelos en Globo)</p>
-            <p class="experience-description">
+            <h3 class="experience-role" data-lang="exp-2-role">Ayudante</h3>
+            <p class="experience-company" data-lang="exp-2-company">Camins de Vent (Vuelos en Globo)</p>
+            <p class="experience-description" data-lang="exp-2-desc">
               Montaje y preparación de globos, seguridad en operaciones de vuelo, asistencia a pasajeros y coordinación logística de eventos aeronáuticos.
             </p>
           </div>
@@ -218,11 +240,11 @@
 
         <!-- Experience 3: MRP Computer -->
         <article class="experience-item fade-up">
-          <div class="experience-date">2024 — 2025</div>
+          <div class="experience-date" data-lang="exp-3-date">2024 — 2025</div>
           <div class="experience-content">
-            <h3 class="experience-role">Técnico de Hardware/Software</h3>
-            <p class="experience-company">MRP Computer</p>
-            <p class="experience-description">
+            <h3 class="experience-role" data-lang="exp-3-role">Técnico de Hardware/Software</h3>
+            <p class="experience-company" data-lang="exp-3-company">MRP Computer</p>
+            <p class="experience-description" data-lang="exp-3-desc">
               Reparación y mantenimiento de equipos, instalación y configuración de sistemas operativos, soporte técnico y despliegue de software.
             </p>
           </div>
@@ -233,16 +255,16 @@
 
   <!-- ===== EDUCATION SECTION ===== -->
   <section id="education" class="section-container">
-    <div class="section-title-sticky">Formación</div>
-    <h2 class="section-hero-title">Formación</h2>
+    <div class="section-title-sticky" data-lang="education-sticky">Formación</div>
+    <h2 class="section-hero-title" data-lang="education-title">Formación</h2>
     <div class="section-content">
       <div class="education-grid">
         
         <!-- Education 1: DAM -->
         <article class="education-card fade-up">
-          <h3 class="education-degree">Grado Superior DAM</h3>
-          <p class="education-school">Institut Milà i Fontanals</p>
-          <p class="education-period">2025 — 2027</p>
+          <h3 class="education-degree" data-lang="edu-1-degree">Grado Superior DAM</h3>
+          <p class="education-school" data-lang="edu-1-school">Institut Milà i Fontanals</p>
+          <p class="education-period" data-lang="edu-1-period">2025 — 2027</p>
           <div class="education-skills">
             <span>Java</span>
             <span>SQL</span>
@@ -257,9 +279,9 @@
 
         <!-- Education 2: SMX -->
         <article class="education-card fade-up">
-          <h3 class="education-degree">Grado Medio SMX</h3>
-          <p class="education-school">Institut Milà i Fontanals</p>
-          <p class="education-period">2023 — 2025</p>
+          <h3 class="education-degree" data-lang="edu-2-degree">Grado Medio SMX</h3>
+          <p class="education-school" data-lang="edu-2-school">Institut Milà i Fontanals</p>
+          <p class="education-period" data-lang="edu-2-period">2023 — 2025</p>
           <div class="education-skills">
             <span>Linux</span>
             <span>Redes</span>
@@ -274,14 +296,14 @@
 
   <!-- ===== ABOUT SECTION ===== -->
   <section id="about" class="section-container">
-    <div class="section-title-sticky">Sobre Mí</div>
-    <h2 class="section-hero-title">Sobre Mí</h2>
+    <div class="section-title-sticky" data-lang="about-sticky">Sobre Mí</div>
+    <h2 class="section-hero-title" data-lang="about-title">Sobre Mí</h2>
     <div class="section-content">
       <div class="about-text fade-up">
-        <p>
+        <p data-lang="about-text-1">
           Soy un desarrollador joven y apasionado por la tecnología, actualmente cursando DAM (Desarrollo de Aplicaciones Multiplataforma) con interés en profundizar hacia Ingeniería Informática. Me encanta crear soluciones reales, útiles y modernas, combinando excelencia técnica con sensibilidad en el diseño.
         </p>
-        <p>
+        <p data-lang="about-text-2">
           Me especializo en desarrollo web full-stack, aplicaciones de escritorio y consultoría técnica. Soy fundador de <strong>NuviaDev</strong>, una empresa dedicada a transformar ideas en experiencias digitales de calidad para negocios locales y emprendimientos.
         </p>
       </div>
@@ -290,23 +312,32 @@
 
   <!-- ===== CONTACT SECTION ===== -->
   <section id="contact" class="section-container contact-section">
-    <div class="section-title-sticky">Contacto</div>
-    <h2 class="section-hero-title">Contacto</h2>
+    <div class="section-title-sticky" data-lang="contact-sticky">Contacto</div>
+    <h2 class="section-hero-title" data-lang="contact-title">Contacto</h2>
     <div class="section-content">
       <div class="contact-content fade-up">
-        <p class="contact-text">Abierto a colaboraciones, proyectos digitales e ideas innovadoras.</p>
+        <p class="contact-text" data-lang="contact-text">Abierto a colaboraciones, proyectos digitales e ideas innovadoras.</p>
         <div class="contact-links">
           <a href="mailto:martiaaguilera@proton.me" class="contact-link">
-            <span>📧 Correo</span>
-            <span>martiaaguilera@proton.me</span>
+            <span class="contact-link-icon">📧</span>
+            <div class="contact-link-content">
+              <span data-lang="contact-email">Correo</span>
+              <span>martiaaguilera@proton.me</span>
+            </div>
           </a>
           <a href="https://github.com/martiaguilera" class="contact-link" target="_blank">
-            <span>🐙 GitHub</span>
-            <span>github.com/martiaguilera</span>
+            <span class="contact-link-icon">🐙</span>
+            <div class="contact-link-content">
+              <span data-lang="contact-github">GitHub</span>
+              <span>github.com/martiaguilera</span>
+            </div>
           </a>
           <a href="https://linkedin.com/in/martiaaguilera" class="contact-link" target="_blank">
-            <span>💼 LinkedIn</span>
-            <span>linkedin.com/in/martiaaguilera</span>
+            <span class="contact-link-icon">💼</span>
+            <div class="contact-link-content">
+              <span data-lang="contact-linkedin">LinkedIn</span>
+              <span>linkedin.com/in/martiaaguilera</span>
+            </div>
           </a>
         </div>
       </div>
@@ -315,7 +346,7 @@
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <p>Diseñado y Desarrollado por Martí Aguilera © 2025</p>
+    <p data-lang="footer">Diseñado y Desarrollado por Martí Aguilera © 2025</p>
   </footer>
 
   <script src="script.js"></script>
