@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <meta name="description" content="Martí Aguilera - Desarrollador y Diseñador especializado en web, aplicaciones y consultoría técnica">
+  <meta name="theme-color" content="#000000">
+  <title>Martí Aguilera — Desarrollador & Diseñador</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ===== NAVBAR FIJA ===== -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#hero" class="navbar-logo">MA</a>
+      <ul class="navbar-menu">
+        <li><a href="#work" class="nav-link">Trabajos</a></li>
+        <li><a href="#services" class="nav-link">Servicios</a></li>
+        <li><a href="#experience" class="nav-link">Experiencia</a></li>
+        <li><a href="#about" class="nav-link">Sobre Mí</a></li>
+        <li><a href="#contact" class="nav-link">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        MARTÍ<br>AGUILERA
+      </h1>
+      <p class="hero-subtitle">Creando Experiencias Digitales con Software, Diseño e Innovación.</p>
+      <p class="hero-meta">Desarrollador — Basado en Catalunya — ©2025</p>
+      <a href="#work" class="hero-btn">Ver Proyectos</a>
+    </div>
+    
+    <!-- Franja fluida con degradado cálido -->
+    <div class="hero-wave-container">
+      <svg class="hero-wave" viewBox="0 0 1200 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#FF4500;stop-opacity:1" />
+            <stop offset="50%" style="stop-color:#FF6B35;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#DC143C;stop-opacity:1" />
+          </linearGradient>
+        </defs>
+        <path d="M0,150 Q300,80 600,150 T1200,150 L1200,400 L0,400 Z" fill="url(#waveGradient)">
+          <animate attributeName="d" 
+            values="M0,150 Q300,80 600,150 T1200,150 L1200,400 L0,400 Z;
+                    M0,150 Q300,200 600,150 T1200,150 L1200,400 L0,400 Z;
+                    M0,150 Q300,80 600,150 T1200,150 L1200,400 L0,400 Z"
+            dur="10s" repeatCount="indefinite" easing="ease-in-out" />
+        </path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="work" class="section-container">
+    <div class="section-title-sticky">Proyectos</div>
+    <h2 class="section-hero-title">Proyectos</h2>
+    <div class="section-content">
+      <div class="projects-grid">
+        
+        <!-- Project 1: Els Prats d'Or -->
+        <article class="project-card fade-up">
+          <div class="project-header">
+            <h3 class="project-name">Els Prats d'Or</h3>
+            <span class="project-badge">Stack Completo</span>
+          </div>
+          <p class="project-description">
+            Tienda online completa para una granja local. Sistema full-stack con carrito de compras, gestión de productos en tiempo real y consultas dinámicas a base de datos.
+          </p>
+          <div class="project-tech">
+            <span>PHP</span>
+            <span>SQL</span>
+            <span>JavaScript</span>
+            <span>HTML5</span>
+            <span>CSS</span>
+          </div>
+          <a href="https://github.com/martiaguilera/elspratsdor" class="project-link" target="_blank">
+            GitHub Repository →
+          </a>
+        </article>
+
+        <!-- Project 2: Simple Web Server -->
+        <article class="project-card fade-up">
+          <div class="project-header">
+            <h3 class="project-name">Simple Web Server (SWS)</h3>
+            <span class="project-badge">Aplicación Desktop</span>
+          </div>
+          <p class="project-description">
+            Aplicación Python que convierte cualquier carpeta en servidor web local. Interfaz gráfica intuitiva, portable y sin dependencias externas. Consola integrada para monitoreo.
+          </p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>GUI</span>
+            <span>Web Server</span>
+          </div>
+          <a href="https://github.com/sikepg/SWSMARTI" class="project-link" target="_blank">
+            GitHub Repository →
+          </a>
+        </article>
+
+        <!-- Project 3: Autoclicker -->
+        <article class="project-card fade-up">
+          <div class="project-header">
+            <h3 class="project-name">Autoclicker v1.0</h3>
+            <span class="project-badge">Utilidad</span>
+          </div>
+          <p class="project-description">
+            Herramienta de automatización en Python con tecla de activación personalizada, intervalos configurables en milisegundos e interfaz simple y eficiente.
+          </p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>Automation</span>
+            <span>UI</span>
+          </div>
+          <a href="https://github.com/martiaguilera/Autoclicker" class="project-link" target="_blank">
+            GitHub Repository →
+          </a>
+        </article>
+
+        <!-- Project 4: Portfolio Web -->
+        <article class="project-card fade-up">
+          <div class="project-header">
+            <h3 class="project-name">Portfolio Web Personal</h3>
+            <span class="project-badge">Este Sitio</span>
+          </div>
+          <p class="project-description">
+            Portfolio web personal mostrando proyectos, experiencia y formación académica. Diseño minimalista moderno con animaciones suaves y scroll interactivo.
+          </p>
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Responsive</span>
+          </div>
+          <a href="https://github.com/martiaguilera/martiaguilera.github.io" class="project-link" target="_blank">
+            GitHub Repository →
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section id="services" class="section-container">
+    <div class="section-title-sticky">Servicios</div>
+    <h2 class="section-hero-title">Servicios</h2>
+    <div class="section-content">
+      <div class="services-intro">
+        <p>Fundador y CEO de <strong>NuviaDev</strong>, empresa especializada en creación de webs modernas para negocios locales y emprendimientos digitales.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card fade-up">
+          <div class="service-icon">⚡</div>
+          <h3>Desarrollo Web a Medida</h3>
+          <p>Sitios web profesionales y funcionales adaptados a tus necesidades específicas.</p>
+        </div>
+        <div class="service-card fade-up">
+          <div class="service-icon">🎨</div>
+          <h3>Diseño UI/UX</h3>
+          <p>Interfaces intuitivas y atractivas que mejoran la experiencia del usuario.</p>
+        </div>
+        <div class="service-card fade-up">
+          <div class="service-icon">💻</div>
+          <h3>Desarrollo de Aplicaciones</h3>
+          <p>Apps desktop y utilitarios en Python, C, Java y más tecnologías.</p>
+        </div>
+        <div class="service-card fade-up">
+          <div class="service-icon">🔧</div>
+          <h3>Consultoría Técnica para PYMES</h3>
+          <p>Asesoramiento en soluciones tecnológicas e infraestructura digital.</p>
+        </div>
+        <div class="service-card fade-up">
+          <div class="service-icon">🔌</div>
+          <h3>Integración y Optimización</h3>
+          <p>Integración de sistemas y optimización de procesos digitales existentes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section id="experience" class="section-container">
+    <div class="section-title-sticky">Experiencia</div>
+    <h2 class="section-hero-title">Experiencia</h2>
+    <div class="section-content">
+      <div class="experience-timeline">
+        
+        <!-- Experience 1: NuviaDev -->
+        <article class="experience-item fade-up">
+          <div class="experience-date">2025 — Actualidad</div>
+          <div class="experience-content">
+            <h3 class="experience-role">CEO & Cofundador</h3>
+            <p class="experience-company">NuviaDev</p>
+            <p class="experience-description">
+              Creación de webs personalizadas, diseño y desarrollo de proyectos digitales. Gestión completa de proyectos y relación con clientes en el ecosistema local.
+            </p>
+          </div>
+        </article>
+
+        <!-- Experience 2: Camins de Vent -->
+        <article class="experience-item fade-up">
+          <div class="experience-date">2023 — Actualidad</div>
+          <div class="experience-content">
+            <h3 class="experience-role">Ayudante</h3>
+            <p class="experience-company">Camins de Vent (Vuelos en Globo)</p>
+            <p class="experience-description">
+              Montaje y preparación de globos, seguridad en operaciones de vuelo, asistencia a pasajeros y coordinación logística de eventos aeronáuticos.
+            </p>
+          </div>
+        </article>
+
+        <!-- Experience 3: MRP Computer -->
+        <article class="experience-item fade-up">
+          <div class="experience-date">2024 — 2025</div>
+          <div class="experience-content">
+            <h3 class="experience-role">Técnico de Hardware/Software</h3>
+            <p class="experience-company">MRP Computer</p>
+            <p class="experience-description">
+              Reparación y mantenimiento de equipos, instalación y configuración de sistemas operativos, soporte técnico y despliegue de software.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION SECTION ===== -->
+  <section id="education" class="section-container">
+    <div class="section-title-sticky">Formación</div>
+    <h2 class="section-hero-title">Formación</h2>
+    <div class="section-content">
+      <div class="education-grid">
+        
+        <!-- Education 1: DAM -->
+        <article class="education-card fade-up">
+          <h3 class="education-degree">Grado Superior DAM</h3>
+          <p class="education-school">Institut Milà i Fontanals</p>
+          <p class="education-period">2025 — 2027</p>
+          <div class="education-skills">
+            <span>Java</span>
+            <span>SQL</span>
+            <span>XML</span>
+            <span>XSD</span>
+            <span>DTD</span>
+            <span>Oracle</span>
+            <span>JavaScript</span>
+            <span>C</span>
+          </div>
+        </article>
+
+        <!-- Education 2: SMX -->
+        <article class="education-card fade-up">
+          <h3 class="education-degree">Grado Medio SMX</h3>
+          <p class="education-school">Institut Milà i Fontanals</p>
+          <p class="education-period">2023 — 2025</p>
+          <div class="education-skills">
+            <span>Linux</span>
+            <span>Redes</span>
+            <span>Seguridad</span>
+            <span>C</span>
+            <span>Windows Admin</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="section-container">
+    <div class="section-title-sticky">Sobre Mí</div>
+    <h2 class="section-hero-title">Sobre Mí</h2>
+    <div class="section-content">
+      <div class="about-text fade-up">
+        <p>
+          Soy un desarrollador joven y apasionado por la tecnología, actualmente cursando DAM (Desarrollo de Aplicaciones Multiplataforma) con interés en profundizar hacia Ingeniería Informática. Me encanta crear soluciones reales, útiles y modernas, combinando excelencia técnica con sensibilidad en el diseño.
+        </p>
+        <p>
+          Me especializo en desarrollo web full-stack, aplicaciones de escritorio y consultoría técnica. Soy fundador de <strong>NuviaDev</strong>, una empresa dedicada a transformar ideas en experiencias digitales de calidad para negocios locales y emprendimientos.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section-container contact-section">
+    <div class="section-title-sticky">Contacto</div>
+    <h2 class="section-hero-title">Contacto</h2>
+    <div class="section-content">
+      <div class="contact-content fade-up">
+        <p class="contact-text">Abierto a colaboraciones, proyectos digitales e ideas innovadoras.</p>
+        <div class="contact-links">
+          <a href="mailto:martiaaguilera@proton.me" class="contact-link">
+            <span>📧 Correo</span>
+            <span>martiaaguilera@proton.me</span>
+          </a>
+          <a href="https://github.com/martiaguilera" class="contact-link" target="_blank">
+            <span>🐙 GitHub</span>
+            <span>github.com/martiaguilera</span>
+          </a>
+          <a href="https://linkedin.com/in/martiaaguilera" class="contact-link" target="_blank">
+            <span>💼 LinkedIn</span>
+            <span>linkedin.com/in/martiaaguilera</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>Diseñado y Desarrollado por Martí Aguilera © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
