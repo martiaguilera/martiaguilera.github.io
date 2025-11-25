@@ -212,6 +212,11 @@ const translations = {
   }
 };
 
+// Variables globales para controlar el efecto de typing
+let isTyping = false;
+let typingTimeout = null;
+let currentTypingIndex = 0;
+
 // Funcion para cambiar idioma
 function changeLanguage(lang) {
   // Guardar idioma en localStorage
@@ -336,9 +341,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll('.nav-link');
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
-      setTimeout(() => {
-        startTypingEffect();
-      }, 300);
+      // No reiniciar el typing effect en cada navegación
+      // Solo reiniciar cuando se vuelve al hero section
+      if (link.getAttribute('href') === '#hero') {
+        setTimeout(() => {
+          startTypingEffect();
+        }, 500);
+      }
     });
   });
 
@@ -423,8 +432,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// ===== TYPING EFFECT =====
+// ===== TYPING EFFECT MEJORADO =====
 function startTypingEffect() {
+  // Limpiar timeout anterior si existe
+  if (typingTimeout) {
+    clearTimeout(typingTimeout);
+    typingTimeout = null;
+  }
+  
   const typingText = document.querySelector('.typing-text');
   if (!typingText) return;
 
@@ -436,24 +451,45 @@ function startTypingEffect() {
 
   if (!text) return;
 
+  // Resetear estado
   typingText.textContent = '';
   typingText.classList.remove('complete');
-  let index = 0;
-  const speed = 50; // ms per character
+  currentTypingIndex = 0;
+  isTyping = true;
 
   function type() {
-    if (index < text.length) {
-      typingText.textContent += text.charAt(index);
-      index++;
-      setTimeout(type, speed);
+    if (currentTypingIndex < text.length && isTyping) {
+      typingText.textContent += text.charAt(currentTypingIndex);
+      currentTypingIndex++;
+      typingTimeout = setTimeout(type, 50); // ms per character
     } else {
       typingText.classList.add('complete');
+      isTyping = false;
     }
   }
 
-  // Delay before starting
-  setTimeout(type, 800);
+  // Delay antes de empezar
+  typingTimeout = setTimeout(type, 800);
 }
+
+// Función para detener el efecto de typing
+function stopTypingEffect() {
+  isTyping = false;
+  if (typingTimeout) {
+    clearTimeout(typingTimeout);
+    typingTimeout = null;
+  }
+}
+
+// Reiniciar typing effect cuando se cambia de idioma
+document.querySelectorAll('.lang-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    stopTypingEffect();
+    setTimeout(() => {
+      startTypingEffect();
+    }, 300);
+  });
+});
 
 // Parallax effect on scroll
 document.addEventListener('scroll', () => {
