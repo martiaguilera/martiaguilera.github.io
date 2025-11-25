@@ -1738,3 +1738,45 @@ body {
     margin-right: 0;
   }
 }
+
+/* ===== MEJORAS PARA EL TYPING EFFECT ===== */
+.typing-text {
+  display: inline;
+  min-height: 1.2em;
+  white-space: normal;
+  word-wrap: break-word;
+  border-right: 2px solid #FF6B35;
+  padding-right: 5px;
+  animation: blink 0.7s infinite;
+  transition: all 0.3s ease;
+}
+
+.typing-text.complete {
+  border-right: none;
+  animation: none;
+}
+
+.typing-text.reset {
+  border-right: 2px solid #FF6B35;
+  animation: blink 0.7s infinite;
+}
+
+/* Mejora para evitar parpadeos durante el reset */
+.hero-subtitle {
+  min-height: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Asegurar que el texto se muestre correctamente en móviles */
+@media (max-width: 768px) {
+  .typing-text {
+    min-height: 2.5em;
+    text-align: center;
+  }
+  
+  .hero-subtitle {
+    min-height: 3em;
+  }
+}
