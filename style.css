@@ -139,6 +139,7 @@ body {
   align-items: center;
   width: 100%;
   box-sizing: border-box;
+  gap: 20px;
 }
 
 .navbar-logo {
@@ -286,7 +287,9 @@ body {
 }
 
 .language-buttons-desktop {
-  display: none !important;
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
 .language-buttons-mobile {
@@ -354,6 +357,9 @@ body {
   text-align: center;
   max-width: 1000px;
   padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   animation: fadeInUp 0.8s ease-out;
 }
 
@@ -376,7 +382,7 @@ body {
 .hero-subtitle {
   font-size: clamp(18px, 2.5vw, 28px);
   font-weight: 300;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   color: rgba(255, 255, 255, 0.7);
   max-width: 600px;
   margin-left: auto;
@@ -390,17 +396,18 @@ body {
 }
 
 .typing-text {
-  display: block;
-  width: 100%;
+  display: inline;
+  min-height: 1.2em;
   white-space: normal;
   word-wrap: break-word;
-  animation: none;
-  border-right: none;
-  padding-right: 0;
+  border-right: 2px solid #FF6B35;
+  padding-right: 5px;
+  animation: blink 0.7s infinite;
 }
 
 .typing-text.complete {
   border-right: none;
+  animation: none;
 }
 
 .hero-meta {
@@ -408,7 +415,7 @@ body {
   color: rgba(255, 255, 255, 0.5);
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .hero-btn {

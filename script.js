@@ -428,9 +428,7 @@ function startTypingEffect() {
   const typingText = document.querySelector('.typing-text');
   if (!typingText) return;
 
-  const fullText = typingText.getAttribute('data-lang');
   const key = typingText.getAttribute('data-lang');
-  
   if (!key) return;
 
   const currentLang = localStorage.getItem('preferredLanguage') || 'ca';
@@ -439,19 +437,22 @@ function startTypingEffect() {
   if (!text) return;
 
   typingText.textContent = '';
+  typingText.classList.remove('complete');
   let index = 0;
-  const speed = 100; // ms per character
+  const speed = 50; // ms per character
 
   function type() {
     if (index < text.length) {
       typingText.textContent += text.charAt(index);
       index++;
       setTimeout(type, speed);
+    } else {
+      typingText.classList.add('complete');
     }
   }
 
   // Delay before starting
-  setTimeout(type, 500);
+  setTimeout(type, 800);
 }
 
 // Parallax effect on scroll
