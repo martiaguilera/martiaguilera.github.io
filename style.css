@@ -1738,3 +1738,80 @@ body {
     margin-right: 0;
   }
 }
+
+/* ===== TECH STACK SECTION ===== */
+.stack-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.stack-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stack-group-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #FF6B35;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.stack-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.stack-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 14px;
+  border-radius: 6px;
+  background-color: var(--pill-bg, #333333);
+  color: #ffffff;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: default;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  position: relative;
+  user-select: none;
+}
+
+.stack-pill:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  filter: brightness(1.15);
+}
+
+/* Staggered entrance animation */
+.stack-categories.fade-up.visible .stack-pill {
+  animation: fadeInUp 0.4s ease-out both;
+}
+
+.stack-pills .stack-pill:nth-child(1)  { animation-delay: 0.05s; }
+.stack-pills .stack-pill:nth-child(2)  { animation-delay: 0.10s; }
+.stack-pills .stack-pill:nth-child(3)  { animation-delay: 0.15s; }
+.stack-pills .stack-pill:nth-child(4)  { animation-delay: 0.20s; }
+.stack-pills .stack-pill:nth-child(5)  { animation-delay: 0.25s; }
+.stack-pills .stack-pill:nth-child(6)  { animation-delay: 0.30s; }
+.stack-pills .stack-pill:nth-child(7)  { animation-delay: 0.35s; }
+.stack-pills .stack-pill:nth-child(8)  { animation-delay: 0.40s; }
+.stack-pills .stack-pill:nth-child(9)  { animation-delay: 0.45s; }
+.stack-pills .stack-pill:nth-child(10) { animation-delay: 0.50s; }
+.stack-pills .stack-pill:nth-child(11) { animation-delay: 0.55s; }
+
+@media (max-width: 480px) {
+  .stack-pill {
+    font-size: 11px;
+    padding: 6px 11px;
+  }
+}

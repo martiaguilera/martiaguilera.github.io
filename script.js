@@ -4,6 +4,7 @@ const translations = {
     'nav-work': 'Treballs',
     'nav-services': 'Serveis',
     'nav-experience': 'Experiencia',
+    'nav-stack': 'Stack',
     'nav-about': 'Sobre Mi',
     'nav-contact': 'Contacte',
     'hero-subtitle': 'Creant Experiencies Digitals amb Software, Disseny i Innovacio.',
@@ -68,12 +69,17 @@ const translations = {
     'about-text-2': 'M\'especialitzo en desenvolupament web full-stack, aplicacions d\'escriptori i consultoria tecnica. Soc fundador de NuviaDev, una empresa dedicada a transformar idees en experiencies digitals de qualitat per a negocis locals i emprenedories.',
     'contact-email': 'Correu',
     'contact-github': 'GitHub',
-    'contact-linkedin': 'LinkedIn'
+    'contact-linkedin': 'LinkedIn',
+    'stack-sticky': 'Stack',
+    'stack-title': 'Stack',
+    'stack-languages': 'Llenguatges',
+    'stack-platforms': 'Plataformes i Eines'
   },
   es: {
     'nav-work': 'Trabajos',
     'nav-services': 'Servicios',
     'nav-experience': 'Experiencia',
+    'nav-stack': 'Stack',
     'nav-about': 'Sobre Mi',
     'nav-contact': 'Contacto',
     'hero-subtitle': 'Creando Experiencias Digitales con Software, Diseño e Innovación.',
@@ -138,12 +144,17 @@ const translations = {
     'about-text-2': 'Me especializo en desarrollo web full-stack, aplicaciones de escritorio y consultoria tecnica. Soy fundador de NuviaDev, una empresa dedicada a transformar ideas en experiencias digitales de calidad para negocios locales y emprendimientos.',
     'contact-email': 'Correo',
     'contact-github': 'GitHub',
-    'contact-linkedin': 'LinkedIn'
+    'contact-linkedin': 'LinkedIn',
+    'stack-sticky': 'Stack',
+    'stack-title': 'Stack',
+    'stack-languages': 'Lenguajes',
+    'stack-platforms': 'Plataformas y Herramientas'
   },
   en: {
     'nav-work': 'Work',
     'nav-services': 'Services',
     'nav-experience': 'Experience',
+    'nav-stack': 'Stack',
     'nav-about': 'About Me',
     'nav-contact': 'Contact',
     'hero-subtitle': 'Creating Digital Experiences with Software, Design and Innovation.',
@@ -208,7 +219,11 @@ const translations = {
     'about-text-2': 'I specialize in full-stack web development, desktop applications and technical consulting. I am founder of NuviaDev, a company dedicated to transforming ideas into quality digital experiences for local businesses and startups.',
     'contact-email': 'Email',
     'contact-github': 'GitHub',
-    'contact-linkedin': 'LinkedIn'
+    'contact-linkedin': 'LinkedIn',
+    'stack-sticky': 'Stack',
+    'stack-title': 'Stack',
+    'stack-languages': 'Languages',
+    'stack-platforms': 'Platforms & Tools'
   }
 };
 
@@ -219,6 +234,8 @@ function changeLanguage(lang) {
   
   // Actualizar todos los elementos con data-lang
   document.querySelectorAll('[data-lang]').forEach(element => {
+    // Skip the typing-text element; it will be handled by startTypingEffect
+    if (element.classList.contains('typing-text')) return;
     const key = element.getAttribute('data-lang');
     if (translations[lang] && translations[lang][key]) {
       const translation = translations[lang][key];
@@ -230,6 +247,9 @@ function changeLanguage(lang) {
       }
     }
   });
+
+  // Re-launch typing effect for the subtitle with the new language
+  startTypingEffect();
   
   // Actualizar botones de idioma activos
   document.querySelectorAll('.lang-btn').forEach(btn => {
@@ -424,6 +444,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // ===== TYPING EFFECT =====
+let typingTimeoutId = null;
+let typingSessionId = null;
+
 function startTypingEffect() {
   const typingText = document.querySelector('.typing-text');
   if (!typingText) return;
@@ -436,23 +459,32 @@ function startTypingEffect() {
 
   if (!text) return;
 
+  // Cancel any ongoing typing animation
+  if (typingTimeoutId) {
+    clearTimeout(typingTimeoutId);
+    typingTimeoutId = null;
+  }
+  const session = {};
+  typingSessionId = session;
+
   typingText.textContent = '';
   typingText.classList.remove('complete');
   let index = 0;
   const speed = 50; // ms per character
 
   function type() {
+    if (typingSessionId !== session) return; // cancelled by a newer call
     if (index < text.length) {
       typingText.textContent += text.charAt(index);
       index++;
-      setTimeout(type, speed);
+      typingTimeoutId = setTimeout(type, speed);
     } else {
       typingText.classList.add('complete');
     }
   }
 
   // Delay before starting
-  setTimeout(type, 800);
+  typingTimeoutId = setTimeout(type, 500);
 }
 
 // Parallax effect on scroll
