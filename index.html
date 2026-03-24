@@ -1,317 +1,335 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-  <meta name="description" content="Martí Aguilera - Desarrollador y Diseñador especializado en web, aplicaciones y consultoría técnica">
+  <meta name="description" content="Martí Aguilera — Desenvolupador i Dissenyador especialitzat en web, aplicacions i consultoria tècnica">
   <meta name="theme-color" content="#000000">
-  <title>Martí Aguilera — Desarrollador & Diseñador</title>
+  <title>Martí Aguilera — Desenvolupador & Dissenyador</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- ===== NAVBAR FIJA ===== -->
-  <nav class="navbar">
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
     <div class="navbar-container">
       <a href="#hero" class="navbar-logo">MA</a>
-      
+
       <ul class="navbar-menu" id="navbar-menu">
-        <li><a href="#work" class="nav-link" data-lang="nav-work">Trabajos</a></li>
-        <li><a href="#services" class="nav-link" data-lang="nav-services">Servicios</a></li>
-        <li><a href="#experience" class="nav-link" data-lang="nav-experience">Experiencia</a></li>
+        <li><a href="#work" class="nav-link" data-lang="nav-work">Treballs</a></li>
+        <li><a href="#services" class="nav-link" data-lang="nav-services">Serveis</a></li>
+        <li><a href="#experience" class="nav-link" data-lang="nav-experience">Experiència</a></li>
         <li><a href="#stack" class="nav-link" data-lang="nav-stack">Stack</a></li>
-        <li><a href="#about" class="nav-link" data-lang="nav-about">Sobre Mí</a></li>
-        <li><a href="#contact" class="nav-link" data-lang="nav-contact">Contacto</a></li>
+        <li><a href="#about" class="nav-link" data-lang="nav-about">Sobre Mi</a></li>
+        <li><a href="#contact" class="nav-link" data-lang="nav-contact">Contacte</a></li>
       </ul>
-      
-      <!-- Language Buttons Desktop -->
-      <div class="language-buttons-desktop" id="lang-buttons-desktop">
-        <button class="lang-btn active" data-lang="ca">Català</button>
-        <button class="lang-btn" data-lang="es">Español</button>
-        <button class="lang-btn" data-lang="en">English</button>
+
+      <div class="lang-group" id="lang-buttons-desktop">
+        <button class="lang-btn active" data-lang="ca">CA</button>
+        <button class="lang-btn" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
       </div>
-      
-      <!-- Hamburger Menu Toggle -->
-      <button class="hamburger" id="hamburger-menu">
-        <span></span>
-        <span></span>
-        <span></span>
+
+      <button class="hamburger" id="hamburger-menu" aria-label="Menu">
+        <span></span><span></span><span></span>
       </button>
     </div>
-    
-    <!-- Mobile Menu with Language Buttons -->
+
     <div class="mobile-menu" id="mobile-menu">
-      <div class="language-buttons-mobile" id="lang-buttons-mobile">
-        <button class="lang-btn active" data-lang="ca">Català</button>
-        <button class="lang-btn" data-lang="es">Español</button>
-        <button class="lang-btn" data-lang="en">English</button>
+      <div class="lang-group lang-group--mobile">
+        <button class="lang-btn active" data-lang="ca">CA</button>
+        <button class="lang-btn" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
       </div>
-      <a href="#work" class="nav-link" data-lang="nav-work">Trabajos</a>
-      <a href="#services" class="nav-link" data-lang="nav-services">Servicios</a>
-      <a href="#experience" class="nav-link" data-lang="nav-experience">Experiencia</a>
+      <a href="#work" class="nav-link" data-lang="nav-work">Treballs</a>
+      <a href="#services" class="nav-link" data-lang="nav-services">Serveis</a>
+      <a href="#experience" class="nav-link" data-lang="nav-experience">Experiència</a>
       <a href="#stack" class="nav-link" data-lang="nav-stack">Stack</a>
-      <a href="#about" class="nav-link" data-lang="nav-about">Sobre Mí</a>
-      <a href="#contact" class="nav-link" data-lang="nav-contact">Contacto</a>
+      <a href="#about" class="nav-link" data-lang="nav-about">Sobre Mi</a>
+      <a href="#contact" class="nav-link" data-lang="nav-contact">Contacte</a>
     </div>
   </nav>
 
-  <!-- ===== HERO SECTION ===== -->
+  <!-- ===== HERO ===== -->
   <section id="hero" class="hero">
+    <div class="hero-bg-grid"></div>
     <div class="hero-content">
-      <h1 class="hero-title">
-        MARTÍ<br>AGUILERA
-      </h1>
-      <p class="hero-subtitle typing-text" data-lang="hero-subtitle">Creando Experiencias Digitales con Software, Diseño e Innovación.</p>
-      <p class="hero-meta" data-lang="hero-meta">Desarrollador — Basado en Catalunya — ©2025</p>
-      <a href="#work" class="hero-btn" data-lang="hero-btn">Ver Proyectos</a>
+      <p class="hero-eyebrow" data-lang="hero-eyebrow">Desenvolupador & Dissenyador</p>
+      <h1 class="hero-title">MARTÍ<br>AGUILERA</h1>
+      <p class="hero-subtitle typing-text" data-lang="hero-subtitle"></p>
+      <p class="hero-meta" data-lang="hero-meta">Basado en Catalunya — ©2025</p>
+      <a href="#work" class="hero-btn" data-lang="hero-btn">Veure Projectes</a>
     </div>
-    
-    <!-- Franja fluida con degradado cálido -->
+    <div class="hero-scroll-hint">
+      <span></span>
+    </div>
     <div class="hero-wave-container">
-      <svg class="hero-wave" viewBox="0 0 1200 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <svg class="hero-wave" viewBox="0 0 1440 320" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" style="stop-color:#FF4500;stop-opacity:1" />
-            <stop offset="50%" style="stop-color:#FF6B35;stop-opacity:1" />
-            <stop offset="100%" style="stop-color:#DC143C;stop-opacity:1" />
+            <stop offset="0%" style="stop-color:#FF4500;stop-opacity:0.8"/>
+            <stop offset="50%" style="stop-color:#FF6B35;stop-opacity:0.6"/>
+            <stop offset="100%" style="stop-color:#DC143C;stop-opacity:0.8"/>
           </linearGradient>
         </defs>
-        <path d="M0,150 Q300,80 600,150 T1200,150 L1200,400 L0,400 Z" fill="url(#waveGradient)">
-          <animate attributeName="d" 
-            values="M0,150 Q300,80 600,150 T1200,150 L1200,400 L0,400 Z;
-                    M0,150 Q300,200 600,150 T1200,150 L1200,400 L0,400 Z;
-                    M0,150 Q300,80 600,150 T1200,150 L1200,400 L0,400 Z"
-            dur="10s" repeatCount="indefinite" easing="ease-in-out" />
+        <path d="M0,160 Q360,80 720,160 T1440,160 L1440,320 L0,320 Z" fill="url(#waveGradient)">
+          <animate attributeName="d"
+            values="M0,160 Q360,80 720,160 T1440,160 L1440,320 L0,320 Z;
+                    M0,160 Q360,220 720,160 T1440,160 L1440,320 L0,320 Z;
+                    M0,160 Q360,80 720,160 T1440,160 L1440,320 L0,320 Z"
+            dur="12s" repeatCount="indefinite"/>
         </path>
       </svg>
     </div>
   </section>
 
-  <!-- ===== PROJECTS SECTION ===== -->
-  <section id="work" class="section-container">
-    <div class="section-title-sticky" data-lang="projects-sticky">Proyectos</div>
-    <h2 class="section-hero-title" data-lang="projects-title">Proyectos</h2>
-    <div class="section-content">
+  <!-- ===== PROJECTS ===== -->
+  <section id="work" class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label" data-lang="projects-label">001</span>
+        <h2 class="section-title" data-lang="projects-title">Projectes</h2>
+      </div>
       <div class="projects-grid">
-        
-        <!-- Project 1: Els Prats d'Or -->
-        <article class="project-card fade-up">
-          <div class="project-header">
-            <h3 class="project-name" data-lang="project-1-name">Els Prats d'Or</h3>
-            <span class="project-badge" data-lang="project-1-badge">Stack Completo</span>
+
+        <!-- Project: catalunyainfo.com -->
+        <article class="project-card project-card--featured fade-up">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <div class="project-header">
+                <h3 class="project-name" data-lang="project-5-name">catalunyainfo.com</h3>
+                <span class="project-badge project-badge--new" data-lang="project-5-badge">Portal de Notícies</span>
+              </div>
+              <div class="project-url">
+                <a href="https://catalunyainfo.com" target="_blank" class="project-url-link">catalunyainfo.com ↗</a>
+              </div>
+            </div>
+            <p class="project-description" data-lang="project-5-desc">
+              Portal de notícies de Catalunya. Plataforma web completa amb contingut editorial, categories temàtiques i disseny modern. Desplegat amb Vercel per a màxima velocitat i disponibilitat.
+            </p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Vercel</span>
+            </div>
+            <a href="https://catalunyainfo.com" class="project-link" target="_blank" data-lang="project-5-link">
+              Visitar web →
+            </a>
           </div>
-          <p class="project-description" data-lang="project-1-desc">
-            Tienda online completa para una granja local. Sistema full-stack con carrito de compras, gestión de productos en tiempo real y consultas dinámicas a base de datos.
-          </p>
-          <div class="project-tech">
-            <span>PHP</span>
-            <span>SQL</span>
-            <span>JavaScript</span>
-            <span>HTML5</span>
-            <span>CSS</span>
-          </div>
-          <a href="https://github.com/martiaguilera/elspratsdor" class="project-link" target="_blank">
-            GitHub Repository →
-          </a>
         </article>
 
-        <!-- Project 2: Simple Web Server -->
+        <!-- Project 1: Els Prats d'Or -->
         <article class="project-card fade-up">
-          <div class="project-header">
-            <h3 class="project-name" data-lang="project-2-name">Simple Web Server (SWS)</h3>
-            <span class="project-badge" data-lang="project-2-badge">Aplicación Desktop</span>
+          <div class="project-card-inner">
+            <div class="project-top">
+              <div class="project-header">
+                <h3 class="project-name" data-lang="project-1-name">Els Prats d'Or</h3>
+                <span class="project-badge" data-lang="project-1-badge">Stack Complet</span>
+              </div>
+            </div>
+            <p class="project-description" data-lang="project-1-desc">
+              Botiga online completa per a una granja local. Sistema full-stack amb carret de compres, gestió de productes en temps real i consultes dinàmiques a base de dades.
+            </p>
+            <div class="project-tech">
+              <span>PHP</span>
+              <span>SQL</span>
+              <span>JavaScript</span>
+              <span>HTML5</span>
+              <span>CSS</span>
+            </div>
+            <a href="https://github.com/martiaguilera/elspratsdor" class="project-link" target="_blank">GitHub →</a>
           </div>
-          <p class="project-description" data-lang="project-2-desc">
-            Aplicación Python que convierte cualquier carpeta en servidor web local. Interfaz gráfica intuitiva, portable y sin dependencias externas. Consola integrada para monitoreo.
-          </p>
-          <div class="project-tech">
-            <span>Python</span>
-            <span>GUI</span>
-            <span>Web Server</span>
+        </article>
+
+        <!-- Project 2: SWS -->
+        <article class="project-card fade-up">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <div class="project-header">
+                <h3 class="project-name" data-lang="project-2-name">Simple Web Server</h3>
+                <span class="project-badge" data-lang="project-2-badge">App Desktop</span>
+              </div>
+            </div>
+            <p class="project-description" data-lang="project-2-desc">
+              Aplicació Python que converteix qualsevol carpeta en servidor web local. Interfície gràfica intuïtiva, portable i sense dependències externes.
+            </p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>GUI</span>
+              <span>Web Server</span>
+            </div>
+            <a href="https://github.com/sikepg/SWSMARTI" class="project-link" target="_blank">GitHub →</a>
           </div>
-          <a href="https://github.com/sikepg/SWSMARTI" class="project-link" target="_blank">
-            GitHub Repository →
-          </a>
         </article>
 
         <!-- Project 3: Autoclicker -->
         <article class="project-card fade-up">
-          <div class="project-header">
-            <h3 class="project-name" data-lang="project-3-name">Autoclicker v1.0</h3>
-            <span class="project-badge" data-lang="project-3-badge">Utilidad</span>
+          <div class="project-card-inner">
+            <div class="project-top">
+              <div class="project-header">
+                <h3 class="project-name" data-lang="project-3-name">Autoclicker v1.0</h3>
+                <span class="project-badge" data-lang="project-3-badge">Utilitat</span>
+              </div>
+            </div>
+            <p class="project-description" data-lang="project-3-desc">
+              Eina d'automatització en Python amb tecla d'activació personalitzada, intervals configurables en mil·lisegons i interfície simple i eficient.
+            </p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Automation</span>
+            </div>
+            <a href="https://github.com/martiaguilera/Autoclicker" class="project-link" target="_blank">GitHub →</a>
           </div>
-          <p class="project-description" data-lang="project-3-desc">
-            Herramienta de automatización en Python con tecla de activación personalizada, intervalos configurables en milisegundos e interfaz simple y eficiente.
-          </p>
-          <div class="project-tech">
-            <span>Python</span>
-            <span>Automation</span>
-            <span>UI</span>
-          </div>
-          <a href="https://github.com/martiaguilera/Autoclicker" class="project-link" target="_blank">
-            GitHub Repository →
-          </a>
         </article>
 
-        <!-- Project 4: Portfolio Web -->
+        <!-- Project 4: Portfolio -->
         <article class="project-card fade-up">
-          <div class="project-header">
-            <h3 class="project-name" data-lang="project-4-name">Portfolio Web Personal</h3>
-            <span class="project-badge" data-lang="project-4-badge">Este Sitio</span>
+          <div class="project-card-inner">
+            <div class="project-top">
+              <div class="project-header">
+                <h3 class="project-name" data-lang="project-4-name">Portfolio Web</h3>
+                <span class="project-badge" data-lang="project-4-badge">Aquest Lloc</span>
+              </div>
+            </div>
+            <p class="project-description" data-lang="project-4-desc">
+              Portfolio web personal mostrant projectes, experiència i formació acadèmica. Disseny minimalista modern amb animacions suaus i scroll interactiu.
+            </p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <a href="https://github.com/martiaguilera/martiaguilera.github.io" class="project-link" target="_blank">GitHub →</a>
           </div>
-          <p class="project-description" data-lang="project-4-desc">
-            Portfolio web personal mostrando proyectos, experiencia y formación académica. Diseño minimalista moderno con animaciones suaves y scroll interactivo.
-          </p>
-          <div class="project-tech">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Responsive</span>
-          </div>
-          <a href="https://github.com/martiaguilera/martiaguilera.github.io" class="project-link" target="_blank">
-            GitHub Repository →
-          </a>
         </article>
+
       </div>
     </div>
   </section>
 
-  <!-- ===== SERVICES SECTION ===== -->
-  <section id="services" class="section-container">
-    <div class="section-title-sticky" data-lang="services-sticky">Servicios</div>
-    <h2 class="section-hero-title" data-lang="services-title">Servicios</h2>
-    <div class="section-content">
-      <div class="services-intro">
-        <p data-lang="services-intro">Fundador y CEO de <strong>NuviaDev</strong>, empresa especializada en creación de webs modernas para negocios locales y emprendimientos digitales.</p>
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="section section--alt">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label" data-lang="services-label">002</span>
+        <h2 class="section-title" data-lang="services-title">Serveis</h2>
       </div>
+      <p class="services-intro" data-lang="services-intro">
+        Fundador i CEO de <strong>NuviaDev</strong>, empresa especialitzada en creació de webs modernes per a negocis locals i emprenedories digitals.
+      </p>
       <div class="services-grid">
         <div class="service-card fade-up">
           <div class="service-icon">⚡</div>
-          <h3 data-lang="service-1-title">Desarrollo Web a Medida</h3>
-          <p data-lang="service-1-desc">Sitios web profesionales y funcionales adaptados a tus necesidades específicas.</p>
+          <h3 data-lang="service-1-title">Desenvolupament Web a Mida</h3>
+          <p data-lang="service-1-desc">Llocs web professionals i funcionals adaptats a les teves necessitats específiques.</p>
         </div>
         <div class="service-card fade-up">
           <div class="service-icon">🎨</div>
-          <h3 data-lang="service-2-title">Diseño UI/UX</h3>
-          <p data-lang="service-2-desc">Interfaces intuitivas y atractivas que mejoran la experiencia del usuario.</p>
+          <h3 data-lang="service-2-title">Disseny UI/UX</h3>
+          <p data-lang="service-2-desc">Interfícies intuïtives i atractives que milloren l'experiència de l'usuari.</p>
         </div>
         <div class="service-card fade-up">
           <div class="service-icon">💻</div>
-          <h3 data-lang="service-3-title">Desarrollo de Aplicaciones</h3>
-          <p data-lang="service-3-desc">Apps desktop y utilitarios en Python, C, Java y más tecnologías.</p>
+          <h3 data-lang="service-3-title">Desenvolupament d'Aplicacions</h3>
+          <p data-lang="service-3-desc">Apps desktop i utilitaris en Python, C, Java i més tecnologies.</p>
         </div>
         <div class="service-card fade-up">
           <div class="service-icon">🔧</div>
-          <h3 data-lang="service-4-title">Consultoría Técnica para PYMES</h3>
-          <p data-lang="service-4-desc">Asesoramiento en soluciones tecnológicas e infraestructura digital.</p>
+          <h3 data-lang="service-4-title">Consultoria Tècnica per a PIMES</h3>
+          <p data-lang="service-4-desc">Assessorament en solucions tecnològiques i infraestructura digital.</p>
         </div>
         <div class="service-card fade-up">
           <div class="service-icon">🔌</div>
-          <h3 data-lang="service-5-title">Integración y Optimización</h3>
-          <p data-lang="service-5-desc">Integración de sistemas y optimización de procesos digitales existentes.</p>
+          <h3 data-lang="service-5-title">Integració i Optimització</h3>
+          <p data-lang="service-5-desc">Integració de sistemes i optimització de processos digitals existents.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== EXPERIENCE SECTION ===== -->
-  <section id="experience" class="section-container">
-    <div class="section-title-sticky" data-lang="experience-sticky">Experiencia</div>
-    <h2 class="section-hero-title" data-lang="experience-title">Experiencia</h2>
-    <div class="section-content">
-      <div class="experience-timeline">
-        
-        <!-- Experience 1: NuviaDev -->
-        <article class="experience-item fade-up">
-          <div class="experience-date" data-lang="exp-1-date">2025 — Actualidad</div>
-          <div class="experience-content">
-            <h3 class="experience-role" data-lang="exp-1-role">CEO & Cofundador</h3>
-            <p class="experience-company" data-lang="exp-1-company">NuviaDev</p>
-            <p class="experience-description" data-lang="exp-1-desc">
-              Creación de webs personalizadas, diseño y desarrollo de proyectos digitales. Gestión completa de proyectos y relación con clientes en el ecosistema local.
-            </p>
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label" data-lang="experience-label">003</span>
+        <h2 class="section-title" data-lang="experience-title">Experiència</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date" data-lang="exp-1-date">2025 — Actualment</div>
+          <div class="timeline-body">
+            <h3 class="timeline-role" data-lang="exp-1-role">CEO & Cofundador</h3>
+            <p class="timeline-company" data-lang="exp-1-company">NuviaDev</p>
+            <p class="timeline-desc" data-lang="exp-1-desc">Creació de webs personalitzades, disseny i desenvolupament de projectes digitals. Gestió completa de projectes i relació amb clients a l'ecosistema local.</p>
           </div>
         </article>
-
-        <!-- Experience 2: Camins de Vent -->
-        <article class="experience-item fade-up">
-          <div class="experience-date" data-lang="exp-2-date">2023 — Actualidad</div>
-          <div class="experience-content">
-            <h3 class="experience-role" data-lang="exp-2-role">Ayudante</h3>
-            <p class="experience-company" data-lang="exp-2-company">Camins de Vent (Vuelos en Globo)</p>
-            <p class="experience-description" data-lang="exp-2-desc">
-              Montaje y preparación de globos, seguridad en operaciones de vuelo, asistencia a pasajeros y coordinación logística de eventos aeronáuticos.
-            </p>
+        <article class="timeline-item fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date" data-lang="exp-2-date">2023 — Actualment</div>
+          <div class="timeline-body">
+            <h3 class="timeline-role" data-lang="exp-2-role">Ajudant</h3>
+            <p class="timeline-company" data-lang="exp-2-company">Camins de Vent (Vols en Globus)</p>
+            <p class="timeline-desc" data-lang="exp-2-desc">Muntatge i preparació de globus, seguretat en operacions de vol, assistència a passatgers i coordinació logística d'events aeronàutics.</p>
           </div>
         </article>
-
-        <!-- Experience 3: MRP Computer -->
-        <article class="experience-item fade-up">
-          <div class="experience-date" data-lang="exp-3-date">2024 — 2025</div>
-          <div class="experience-content">
-            <h3 class="experience-role" data-lang="exp-3-role">Técnico de Hardware/Software</h3>
-            <p class="experience-company" data-lang="exp-3-company">MRP Computer</p>
-            <p class="experience-description" data-lang="exp-3-desc">
-              Reparación y mantenimiento de equipos, instalación y configuración de sistemas operativos, soporte técnico y despliegue de software.
-            </p>
+        <article class="timeline-item fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date" data-lang="exp-3-date">2024 — 2025</div>
+          <div class="timeline-body">
+            <h3 class="timeline-role" data-lang="exp-3-role">Tècnic Hardware/Software</h3>
+            <p class="timeline-company" data-lang="exp-3-company">MRP Computer</p>
+            <p class="timeline-desc" data-lang="exp-3-desc">Reparació i manteniment d'equips, instal·lació i configuració de sistemes operatius, suport tècnic i desplegament de software.</p>
           </div>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- ===== EDUCATION SECTION ===== -->
-  <section id="education" class="section-container">
-    <div class="section-title-sticky" data-lang="education-sticky">Formación</div>
-    <h2 class="section-hero-title" data-lang="education-title">Formación</h2>
-    <div class="section-content">
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="section section--alt">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label" data-lang="education-label">004</span>
+        <h2 class="section-title" data-lang="education-title">Formació</h2>
+      </div>
       <div class="education-grid">
-        
-        <!-- Education 1: DAM -->
         <article class="education-card fade-up">
-          <h3 class="education-degree" data-lang="edu-1-degree">Grado Superior DAM</h3>
-          <p class="education-school" data-lang="edu-1-school">Institut Milà i Fontanals</p>
-          <p class="education-period" data-lang="edu-1-period">2025 — 2027</p>
-          <div class="education-skills">
-            <span>Java</span>
-            <span>SQL</span>
-            <span>XML</span>
-            <span>XSD</span>
-            <span>DTD</span>
-            <span>Oracle</span>
-            <span>JavaScript</span>
-            <span>C</span>
+          <h3 class="edu-degree" data-lang="edu-1-degree">Grau Superior DAM</h3>
+          <p class="edu-school" data-lang="edu-1-school">Institut Milà i Fontanals</p>
+          <p class="edu-period" data-lang="edu-1-period">2025 — 2027</p>
+          <div class="edu-skills">
+            <span>Java</span><span>SQL</span><span>XML</span><span>XSD</span>
+            <span>DTD</span><span>Oracle</span><span>JavaScript</span><span>C</span>
           </div>
         </article>
-
-        <!-- Education 2: SMX -->
         <article class="education-card fade-up">
-          <h3 class="education-degree" data-lang="edu-2-degree">Grado Medio SMX</h3>
-          <p class="education-school" data-lang="edu-2-school">Institut Milà i Fontanals</p>
-          <p class="education-period" data-lang="edu-2-period">2023 — 2025</p>
-          <div class="education-skills">
-            <span>Linux</span>
-            <span>Redes</span>
-            <span>Seguridad</span>
-            <span>C</span>
-            <span>Windows Admin</span>
+          <h3 class="edu-degree" data-lang="edu-2-degree">Grau Mitjà SMX</h3>
+          <p class="edu-school" data-lang="edu-2-school">Institut Milà i Fontanals</p>
+          <p class="edu-period" data-lang="edu-2-period">2023 — 2025</p>
+          <div class="edu-skills">
+            <span>Linux</span><span>Xarxes</span><span>Seguretat</span>
+            <span>C</span><span>Windows Admin</span>
           </div>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- ===== TECH STACK SECTION ===== -->
-  <section id="stack" class="section-container">
-    <div class="section-title-sticky" data-lang="stack-sticky">Stack</div>
-    <h2 class="section-hero-title" data-lang="stack-title">Stack</h2>
-    <div class="section-content">
+  <!-- ===== STACK ===== -->
+  <section id="stack" class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label" data-lang="stack-label">005</span>
+        <h2 class="section-title" data-lang="stack-title">Stack</h2>
+      </div>
       <div class="stack-categories fade-up">
-
         <div class="stack-group">
-          <p class="stack-group-label" data-lang="stack-languages">Llenguatges</p>
+          <p class="stack-label" data-lang="stack-languages">Llenguatges</p>
           <div class="stack-pills">
             <span class="stack-pill" style="--pill-bg:#2B5B98">C</span>
             <span class="stack-pill" style="--pill-bg:#E44D26">HTML5</span>
@@ -322,13 +340,12 @@
             <span class="stack-pill" style="--pill-bg:#F89820">Java</span>
             <span class="stack-pill" style="--pill-bg:#4479A1">SQL</span>
             <span class="stack-pill" style="--pill-bg:#E86305">XML</span>
-            <span class="stack-pill" style="--pill-bg:#333">XPath</span>
-            <span class="stack-pill" style="--pill-bg:#333">XQuery</span>
+            <span class="stack-pill" style="--pill-bg:#444">XPath</span>
+            <span class="stack-pill" style="--pill-bg:#444">XQuery</span>
           </div>
         </div>
-
         <div class="stack-group">
-          <p class="stack-group-label" data-lang="stack-platforms">Plataformes</p>
+          <p class="stack-label" data-lang="stack-platforms">Plataformes i Eines</p>
           <div class="stack-pills">
             <span class="stack-pill" style="--pill-bg:#4D4D4D">Windows Terminal</span>
             <span class="stack-pill" style="--pill-bg:#E95420">Ubuntu</span>
@@ -341,64 +358,68 @@
             <span class="stack-pill" style="--pill-bg:#181717;outline:1px solid rgba(255,255,255,0.2)">GitHub</span>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- ===== ABOUT SECTION ===== -->
-  <section id="about" class="section-container">
-    <div class="section-title-sticky" data-lang="about-sticky">Sobre Mí</div>
-    <h2 class="section-hero-title" data-lang="about-title">Sobre Mí</h2>
-    <div class="section-content">
-      <div class="about-text fade-up">
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section section--alt">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label" data-lang="about-label">006</span>
+        <h2 class="section-title" data-lang="about-title">Sobre Mi</h2>
+      </div>
+      <div class="about-content fade-up">
         <p data-lang="about-text-1">
-          Soy un desarrollador joven y apasionado por la tecnología, actualmente cursando DAM (Desarrollo de Aplicaciones Multiplataforma) con interés en profundizar hacia Ingeniería Informática. Me encanta crear soluciones reales, útiles y modernas, combinando excelencia técnica con sensibilidad en el diseño.
+          Soc un desenvolupador jove i apassionat per la tecnologia, actualment cursant DAM (Desenvolupament d'Aplicacions Multiplataforma) amb interès en aprofundir cap a Enginyeria Informàtica. M'encanta crear solucions reals, útils i modernes, combinant excel·lència tècnica amb sensibilitat en el disseny.
         </p>
         <p data-lang="about-text-2">
-          Me especializo en desarrollo web full-stack, aplicaciones de escritorio y consultoría técnica. Soy fundador de <strong>NuviaDev</strong>, una empresa dedicada a transformar ideas en experiencias digitales de calidad para negocios locales y emprendimientos.
+          M'especialitzo en desenvolupament web full-stack, aplicacions d'escriptori i consultoria tècnica. Soc fundador de <strong>NuviaDev</strong>, una empresa dedicada a transformar idees en experiències digitals de qualitat per a negocis locals i emprenedories.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- ===== CONTACT SECTION ===== -->
-  <section id="contact" class="section-container contact-section">
-    <div class="section-title-sticky" data-lang="contact-sticky">Contacto</div>
-    <h2 class="section-hero-title" data-lang="contact-title">Contacto</h2>
-    <div class="section-content">
-      <div class="contact-content fade-up">
-        <p class="contact-text" data-lang="contact-text">Abierto a colaboraciones, proyectos digitales e ideas innovadoras.</p>
-        <div class="contact-links">
-          <a href="mailto:martiaaguilera@proton.me" class="contact-link">
-            <span class="contact-link-icon">📧</span>
-            <div class="contact-link-content">
-              <span data-lang="contact-email">Correo</span>
-              <span>martiaaguilera@proton.me</span>
-            </div>
-          </a>
-          <a href="https://github.com/martiaguilera" class="contact-link" target="_blank">
-            <span class="contact-link-icon">🐙</span>
-            <div class="contact-link-content">
-              <span data-lang="contact-github">GitHub</span>
-              <span>github.com/martiaguilera</span>
-            </div>
-          </a>
-          <a href="https://linkedin.com/in/martiaaguilera" class="contact-link" target="_blank">
-            <span class="contact-link-icon">💼</span>
-            <div class="contact-link-content">
-              <span data-lang="contact-linkedin">LinkedIn</span>
-              <span>linkedin.com/in/martiaaguilera</span>
-            </div>
-          </a>
-        </div>
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label" data-lang="contact-label">007</span>
+        <h2 class="section-title" data-lang="contact-title">Contacte</h2>
+      </div>
+      <p class="contact-text" data-lang="contact-text">Obert a col·laboracions, projectes digitals i idees innovadores.</p>
+      <div class="contact-links">
+        <a href="mailto:martiaaguilera@proton.me" class="contact-link fade-up">
+          <span class="contact-icon">📧</span>
+          <div class="contact-info">
+            <span class="contact-label" data-lang="contact-email">Correu</span>
+            <span class="contact-value">martiaaguilera@proton.me</span>
+          </div>
+          <span class="contact-arrow">→</span>
+        </a>
+        <a href="https://github.com/martiaguilera" class="contact-link fade-up" target="_blank">
+          <span class="contact-icon">🐙</span>
+          <div class="contact-info">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">github.com/martiaguilera</span>
+          </div>
+          <span class="contact-arrow">→</span>
+        </a>
+        <a href="https://linkedin.com/in/martiaaguilera" class="contact-link fade-up" target="_blank">
+          <span class="contact-icon">💼</span>
+          <div class="contact-info">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">linkedin.com/in/martiaaguilera</span>
+          </div>
+          <span class="contact-arrow">→</span>
+        </a>
       </div>
     </div>
   </section>
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <p data-lang="footer">Diseñado y Desarrollado por Martí Aguilera © 2025</p>
+    <p data-lang="footer">Dissenyat i Desenvolupat per Martí Aguilera © 2025</p>
   </footer>
 
   <script src="script.js"></script>
