@@ -2,441 +2,275 @@
 <html lang="ca">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Martí Aguilera — Desenvolupador i Dissenyador especialitzat en web, aplicacions i consultoria tècnica">
   <meta name="theme-color" content="#000000">
   <title>Martí Aguilera — Desenvolupador & Dissenyador</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar" id="navbar">
-    <div class="navbar-container">
-      <a href="#hero" class="navbar-logo">MA</a>
-
-      <ul class="navbar-menu" id="navbar-menu">
-        <li><a href="#work" class="nav-link" data-lang="nav-work">Treballs</a></li>
-        <li><a href="#services" class="nav-link" data-lang="nav-services">Serveis</a></li>
-        <li><a href="#experience" class="nav-link" data-lang="nav-experience">Experiència</a></li>
-        <li><a href="#stack" class="nav-link" data-lang="nav-stack">Stack</a></li>
-        <li><a href="#about" class="nav-link" data-lang="nav-about">Sobre Mi</a></li>
-        <li><a href="#contact" class="nav-link" data-lang="nav-contact">Contacte</a></li>
-      </ul>
-
-      <div class="lang-group" id="lang-buttons-desktop">
-        <button class="lang-btn active" data-lang="ca">CA</button>
-        <button class="lang-btn" data-lang="es">ES</button>
-        <button class="lang-btn" data-lang="en">EN</button>
-      </div>
-
-      <button class="hamburger" id="hamburger-menu" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
+<nav class="nav" id="nav">
+  <div class="nav-in">
+    <a href="#hero" class="logo">MA</a>
+    <ul class="nl" id="navLinks">
+      <li><a href="#work" data-k="nav-work">Treballs</a></li>
+      <li><a href="#services" data-k="nav-services">Serveis</a></li>
+      <li><a href="#experience" data-k="nav-experience">Experiència</a></li>
+      <li><a href="#stack" data-k="nav-stack">Stack</a></li>
+      <li><a href="#about" data-k="nav-about">Sobre Mi</a></li>
+      <li><a href="#contact" data-k="nav-contact">Contacte</a></li>
+    </ul>
+    <div class="lbs">
+      <button class="lb on" data-l="ca">CA</button>
+      <button class="lb" data-l="es">ES</button>
+      <button class="lb" data-l="en">EN</button>
     </div>
-
-    <div class="mobile-menu" id="mobile-menu">
-      <div class="lang-group lang-group--mobile">
-        <button class="lang-btn active" data-lang="ca">CA</button>
-        <button class="lang-btn" data-lang="es">ES</button>
-        <button class="lang-btn" data-lang="en">EN</button>
-      </div>
-      <a href="#work" class="nav-link" data-lang="nav-work">Treballs</a>
-      <a href="#services" class="nav-link" data-lang="nav-services">Serveis</a>
-      <a href="#experience" class="nav-link" data-lang="nav-experience">Experiència</a>
-      <a href="#stack" class="nav-link" data-lang="nav-stack">Stack</a>
-      <a href="#about" class="nav-link" data-lang="nav-about">Sobre Mi</a>
-      <a href="#contact" class="nav-link" data-lang="nav-contact">Contacte</a>
+    <button class="hbg" id="hbg" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mob" id="mob">
+    <div class="mob-lb">
+      <button class="lb on" data-l="ca">CA</button>
+      <button class="lb" data-l="es">ES</button>
+      <button class="lb" data-l="en">EN</button>
     </div>
-  </nav>
+    <a href="#work" data-k="nav-work">Treballs</a>
+    <a href="#services" data-k="nav-services">Serveis</a>
+    <a href="#experience" data-k="nav-experience">Experiència</a>
+    <a href="#stack" data-k="nav-stack">Stack</a>
+    <a href="#about" data-k="nav-about">Sobre Mi</a>
+    <a href="#contact" data-k="nav-contact">Contacte</a>
+  </div>
+</nav>
 
-  <!-- ===== HERO ===== -->
-  <section id="hero" class="hero">
-    <div class="hero-bg-grid"></div>
-    <div class="hero-content">
-      <p class="hero-eyebrow" data-lang="hero-eyebrow">Desenvolupador & Dissenyador</p>
-      <h1 class="hero-title"><span class="hero-name-line">MARTÍ</span><span class="hero-name-line">AGUILERA</span></h1>
-      <p class="hero-subtitle typing-text" data-lang="hero-subtitle"></p>
-      <p class="hero-meta" data-lang="hero-meta">Basado en Catalunya — ©2025</p>
-      <a href="#work" class="hero-btn" data-lang="hero-btn">Veure Projectes</a>
-    </div>
-    <div class="hero-scroll-hint">
-      <span></span>
-    </div>
-    <div class="hero-wave-container">
-      <svg class="hero-wave" viewBox="0 0 1440 320" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" style="stop-color:#FF4500;stop-opacity:0.8"/>
-            <stop offset="50%" style="stop-color:#FF6B35;stop-opacity:0.6"/>
-            <stop offset="100%" style="stop-color:#DC143C;stop-opacity:0.8"/>
-          </linearGradient>
-        </defs>
-        <path d="M0,160 Q360,80 720,160 T1440,160 L1440,320 L0,320 Z" fill="url(#waveGradient)">
-          <animate attributeName="d"
-            values="M0,160 Q360,80 720,160 T1440,160 L1440,320 L0,320 Z;
-                    M0,160 Q360,220 720,160 T1440,160 L1440,320 L0,320 Z;
-                    M0,160 Q360,80 720,160 T1440,160 L1440,320 L0,320 Z"
-            dur="12s" repeatCount="indefinite"/>
-        </path>
-      </svg>
-    </div>
-  </section>
+<section id="hero" class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-body">
+    <p class="hero-eye" data-k="hero-eye">Desenvolupador &amp; Dissenyador</p>
+    <span class="hero-name">MARTÍ AGUILERA</span>
+    <span class="hero-sub" id="tsub" data-k="hero-sub"></span>
+    <span class="hero-meta" data-k="hero-meta">Basat a Catalunya — ©2025</span>
+    <br><br>
+    <a href="#work" class="hero-cta" data-k="hero-cta">Veure Projectes</a>
+  </div>
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 220" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <defs><linearGradient id="wg" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#FF4500;stop-opacity:.8"/>
+        <stop offset="50%" style="stop-color:#FF6B35;stop-opacity:.55"/>
+        <stop offset="100%" style="stop-color:#DC143C;stop-opacity:.8"/>
+      </linearGradient></defs>
+      <path d="M0,110 Q360,55 720,110 T1440,110 L1440,220 L0,220 Z" fill="url(#wg)">
+        <animate attributeName="d" values="M0,110 Q360,55 720,110 T1440,110 L1440,220 L0,220 Z;M0,110 Q360,155 720,110 T1440,110 L1440,220 L0,220 Z;M0,110 Q360,55 720,110 T1440,110 L1440,220 L0,220 Z" dur="11s" repeatCount="indefinite"/>
+      </path>
+    </svg>
+  </div>
+  <div class="hero-scroll"></div>
+</section>
 
-  <!-- ===== PROJECTS ===== -->
-  <section id="work" class="section">
-    <div class="section-inner">
-      <div class="section-header">
-        <span class="section-label" data-lang="projects-label">001</span>
-        <h2 class="section-title" data-lang="projects-title">Projectes</h2>
-      </div>
-      <div class="projects-grid">
-
-        <!-- Project: catalunyainfo.com -->
-        <article class="project-card project-card--featured fade-up">
-          <div class="project-card-inner">
-            <div class="project-top">
-              <div class="project-header">
-                <h3 class="project-name" data-lang="project-5-name">catalunyainfo.com</h3>
-                <span class="project-badge project-badge--new" data-lang="project-5-badge">Portal de Notícies</span>
-              </div>
-              <div class="project-url">
-                <a href="https://catalunyainfo.com" target="_blank" class="project-url-link">catalunyainfo.com ↗</a>
-              </div>
+<section id="work" class="sec">
+  <div class="sec-in">
+    <div class="sec-head"><span class="sec-num">001</span><h2 class="sec-title" data-k="sec-work">Projectes</h2></div>
+    <div class="pg">
+      <article class="pc pf fi">
+        <div class="ptop">
+          <div>
+            <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:6px;">
+              <h3 class="pname" data-k="p5-name">catalunyainfo.com</h3>
+              <span class="pbadge pbadge-new" data-k="p5-badge">Portal de Notícies</span>
             </div>
-            <p class="project-description" data-lang="project-5-desc">
-              Portal de notícies de Catalunya. Plataforma web completa amb contingut editorial, categories temàtiques i disseny modern. Desplegat amb Vercel per a màxima velocitat i disponibilitat.
-            </p>
-            <div class="project-tech">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-              <span>Vercel</span>
-            </div>
-            <a href="https://catalunyainfo.com" class="project-link" target="_blank" data-lang="project-5-link">
-              Visitar web →
-            </a>
+            <a href="https://catalunyainfo.com" target="_blank" class="purl">catalunyainfo.com ↗</a>
           </div>
-        </article>
-
-        <!-- Project 1: Els Prats d'Or -->
-        <article class="project-card fade-up">
-          <div class="project-card-inner">
-            <div class="project-top">
-              <div class="project-header">
-                <h3 class="project-name" data-lang="project-1-name">Els Prats d'Or</h3>
-                <span class="project-badge" data-lang="project-1-badge">Stack Complet</span>
-              </div>
-            </div>
-            <p class="project-description" data-lang="project-1-desc">
-              Botiga online completa per a una granja local. Sistema full-stack amb carret de compres, gestió de productes en temps real i consultes dinàmiques a base de dades.
-            </p>
-            <div class="project-tech">
-              <span>PHP</span>
-              <span>SQL</span>
-              <span>JavaScript</span>
-              <span>HTML5</span>
-              <span>CSS</span>
-            </div>
-            <a href="https://github.com/martiaguilera/elspratsdor" class="project-link" target="_blank">GitHub →</a>
-          </div>
-        </article>
-
-        <!-- Project 2: SWS -->
-        <article class="project-card fade-up">
-          <div class="project-card-inner">
-            <div class="project-top">
-              <div class="project-header">
-                <h3 class="project-name" data-lang="project-2-name">Simple Web Server</h3>
-                <span class="project-badge" data-lang="project-2-badge">App Desktop</span>
-              </div>
-            </div>
-            <p class="project-description" data-lang="project-2-desc">
-              Aplicació Python que converteix qualsevol carpeta en servidor web local. Interfície gràfica intuïtiva, portable i sense dependències externes.
-            </p>
-            <div class="project-tech">
-              <span>Python</span>
-              <span>GUI</span>
-              <span>Web Server</span>
-            </div>
-            <a href="https://github.com/sikepg/SWSMARTI" class="project-link" target="_blank">GitHub →</a>
-          </div>
-        </article>
-
-        <!-- Project 3: Autoclicker -->
-        <article class="project-card fade-up">
-          <div class="project-card-inner">
-            <div class="project-top">
-              <div class="project-header">
-                <h3 class="project-name" data-lang="project-3-name">Autoclicker v1.0</h3>
-                <span class="project-badge" data-lang="project-3-badge">Utilitat</span>
-              </div>
-            </div>
-            <p class="project-description" data-lang="project-3-desc">
-              Eina d'automatització en Python amb tecla d'activació personalitzada, intervals configurables en mil·lisegons i interfície simple i eficient.
-            </p>
-            <div class="project-tech">
-              <span>Python</span>
-              <span>Automation</span>
-            </div>
-            <a href="https://github.com/martiaguilera/Autoclicker" class="project-link" target="_blank">GitHub →</a>
-          </div>
-        </article>
-
-        <!-- Project 4: Portfolio -->
-        <article class="project-card fade-up">
-          <div class="project-card-inner">
-            <div class="project-top">
-              <div class="project-header">
-                <h3 class="project-name" data-lang="project-4-name">Portfolio Web</h3>
-                <span class="project-badge" data-lang="project-4-badge">Aquest Lloc</span>
-              </div>
-            </div>
-            <p class="project-description" data-lang="project-4-desc">
-              Portfolio web personal mostrant projectes, experiència i formació acadèmica. Disseny minimalista modern amb animacions suaus i scroll interactiu.
-            </p>
-            <div class="project-tech">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
-            <a href="https://github.com/martiaguilera/martiaguilera.github.io" class="project-link" target="_blank">GitHub →</a>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== SERVICES ===== -->
-  <section id="services" class="section section--alt">
-    <div class="section-inner">
-      <div class="section-header">
-        <span class="section-label" data-lang="services-label">002</span>
-        <h2 class="section-title" data-lang="services-title">Serveis</h2>
-      </div>
-      <p class="services-intro" data-lang="services-intro">
-        Fundador i CEO de <strong>NuviaDev</strong>, empresa especialitzada en creació de webs modernes per a negocis locals i emprenedories digitals.
-      </p>
-      <div class="services-grid">
-        <div class="service-card fade-up">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
-            </svg>
-          </div>
-          <h3 data-lang="service-1-title">Desenvolupament Web a Mida</h3>
-          <p data-lang="service-1-desc">Llocs web moderns, ràpids i adaptats a cada negoci. Des del disseny fins al desplegament.</p>
         </div>
-        <div class="service-card fade-up">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>
-            </svg>
-          </div>
-          <h3 data-lang="service-2-title">Disseny UI/UX</h3>
-          <p data-lang="service-2-desc">Interfícies netes i intuïtives pensades per a l'usuari. Prioritzo la usabilitat i l'estètica.</p>
+        <p class="pdesc" data-k="p5-desc">Portal de notícies de Catalunya. Plataforma web completa amb contingut editorial, categories temàtiques i disseny modern. Desplegat amb Vercel.</p>
+        <div class="ptags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Vercel</span></div>
+        <a href="https://catalunyainfo.com" target="_blank" class="pl" data-k="p5-link">Visitar web →</a>
+      </article>
+      <article class="pc fi">
+        <div class="ptop"><h3 class="pname" data-k="p1-name">Els Prats d'Or</h3><span class="pbadge" data-k="p1-badge">Stack Complet</span></div>
+        <p class="pdesc" data-k="p1-desc">Botiga online completa per a una granja local. Full-stack amb carret de compres, gestió de productes en temps real i consultes dinàmiques.</p>
+        <div class="ptags"><span>PHP</span><span>SQL</span><span>JavaScript</span><span>HTML5</span><span>CSS</span></div>
+        <a href="https://github.com/martiaguilera/elspratsdor" target="_blank" class="pl">GitHub →</a>
+      </article>
+      <article class="pc fi">
+        <div class="ptop"><h3 class="pname" data-k="p2-name">Simple Web Server</h3><span class="pbadge" data-k="p2-badge">App Desktop</span></div>
+        <p class="pdesc" data-k="p2-desc">Aplicació Python que converteix qualsevol carpeta en servidor web local. Interfície gràfica, portable i sense dependències externes.</p>
+        <div class="ptags"><span>Python</span><span>GUI</span><span>Web Server</span></div>
+        <a href="https://github.com/sikepg/SWSMARTI" target="_blank" class="pl">GitHub →</a>
+      </article>
+      <article class="pc fi">
+        <div class="ptop"><h3 class="pname" data-k="p3-name">Autoclicker v1.0</h3><span class="pbadge" data-k="p3-badge">Utilitat</span></div>
+        <p class="pdesc" data-k="p3-desc">Eina d'automatització en Python amb tecla d'activació personalitzada i intervals configurables en mil·lisegons.</p>
+        <div class="ptags"><span>Python</span><span>Automation</span></div>
+        <a href="https://github.com/martiaguilera/Autoclicker" target="_blank" class="pl">GitHub →</a>
+      </article>
+      <article class="pc fi">
+        <div class="ptop"><h3 class="pname" data-k="p4-name">Portfolio Web</h3><span class="pbadge" data-k="p4-badge">Aquest Lloc</span></div>
+        <p class="pdesc" data-k="p4-desc">Portfolio web personal amb disseny minimalista modern, animacions suaus, multilingüe i scroll interactiu.</p>
+        <div class="ptags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <a href="https://github.com/martiaguilera/martiaguilera.github.io" target="_blank" class="pl">GitHub →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="sec sec-alt">
+  <div class="sec-in">
+    <div class="sec-head"><span class="sec-num">002</span><h2 class="sec-title" data-k="sec-services">Serveis</h2></div>
+    <p class="svc-intro" data-k="svc-intro">Fundador i CEO de <strong>NuviaDev</strong>, empresa especialitzada en creació de webs modernes per a negocis locals i emprenedories digitals.</p>
+    <div class="sg">
+      <div class="sc fi">
+        <div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+        <h3 data-k="s1-t">Dev Web a Mida</h3><p data-k="s1-d">Webs modernes, ràpides i adaptades. Des del disseny fins al desplegament.</p>
+      </div>
+      <div class="sc fi">
+        <div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+        <h3 data-k="s2-t">Disseny UI/UX</h3><p data-k="s2-d">Interfícies netes i intuïtives. Usabilitat i estètica al primer pla.</p>
+      </div>
+      <div class="sc fi">
+        <div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+        <h3 data-k="s3-t">Apps &amp; Utilitats</h3><p data-k="s3-d">Aplicacions d'escriptori i scripts en Python, Java o C.</p>
+      </div>
+      <div class="sc fi">
+        <div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></div>
+        <h3 data-k="s4-t">Consultoria Tècnica</h3><p data-k="s4-d">Digitalització de PIMES: infraestructura, eines i presència online.</p>
+      </div>
+      <div class="sc fi">
+        <div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3 data-k="s5-t">Manteniment &amp; Suport</h3><p data-k="s5-d">Manteniment continuat, incidències i actualitzacions periòdiques.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="sec">
+  <div class="sec-in">
+    <div class="sec-head"><span class="sec-num">003</span><h2 class="sec-title" data-k="sec-exp">Experiència</h2></div>
+    <div class="tl">
+      <article class="ti fi">
+        <div class="td"></div>
+        <div class="t-date" data-k="e1-d">2025 — Actualment</div>
+        <h3 class="t-role" data-k="e1-r">CEO &amp; Cofundador</h3>
+        <p class="t-co" data-k="e1-c">NuviaDev</p>
+        <p class="t-desc" data-k="e1-t">Creació de webs personalitzades, disseny i desenvolupament de projectes digitals. Gestió completa de projectes i relació amb clients.</p>
+      </article>
+      <article class="ti fi">
+        <div class="td"></div>
+        <div class="t-date" data-k="e2-d">2023 — Actualment</div>
+        <h3 class="t-role" data-k="e2-r">Ajudant</h3>
+        <p class="t-co" data-k="e2-c">Camins de Vent (Vols en Globus)</p>
+        <p class="t-desc" data-k="e2-t">Muntatge i preparació de globus, seguretat en operacions de vol, assistència a passatgers i coordinació logística.</p>
+      </article>
+      <article class="ti fi">
+        <div class="td"></div>
+        <div class="t-date" data-k="e3-d">2024 — 2025</div>
+        <h3 class="t-role" data-k="e3-r">Tècnic Hardware/Software</h3>
+        <p class="t-co" data-k="e3-c">MRP Computer</p>
+        <p class="t-desc" data-k="e3-t">Reparació i manteniment d'equips, instal·lació de sistemes operatius, suport tècnic i desplegament de software.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="sec sec-alt">
+  <div class="sec-in">
+    <div class="sec-head"><span class="sec-num">004</span><h2 class="sec-title" data-k="sec-edu">Formació</h2></div>
+    <div class="eg">
+      <article class="ec fi">
+        <h3 class="ed" data-k="ed1-d">Grau Superior DAM</h3>
+        <p class="es" data-k="ed1-s">Institut Milà i Fontanals</p>
+        <p class="ep" data-k="ed1-p">2025 — 2027</p>
+        <div class="epills"><span>Java</span><span>SQL</span><span>XML</span><span>XSD</span><span>DTD</span><span>Oracle</span><span>JavaScript</span><span>C</span></div>
+      </article>
+      <article class="ec fi">
+        <h3 class="ed" data-k="ed2-d">Grau Mitjà SMX</h3>
+        <p class="es" data-k="ed2-s">Institut Milà i Fontanals</p>
+        <p class="ep" data-k="ed2-p">2023 — 2025</p>
+        <div class="epills"><span>Linux</span><span>Xarxes</span><span>Seguretat</span><span>C</span><span>Windows Admin</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="stack" class="sec">
+  <div class="sec-in">
+    <div class="sec-head"><span class="sec-num">005</span><h2 class="sec-title" data-k="sec-stack">Stack</h2></div>
+    <div class="sw fi">
+      <div class="sg2">
+        <p class="sl" data-k="st-lang">Llenguatges</p>
+        <div class="spp">
+          <span class="sp" style="--c:#2B5B98">C</span>
+          <span class="sp" style="--c:#E44D26">HTML5</span>
+          <span class="sp" style="--c:#1572B6">CSS3</span>
+          <span class="sp" style="--c:#F7DF1E;color:#000">JavaScript</span>
+          <span class="sp" style="--c:#777BB4">PHP</span>
+          <span class="sp" style="--c:#3776AB">Python</span>
+          <span class="sp" style="--c:#F89820">Java</span>
+          <span class="sp" style="--c:#4479A1">SQL</span>
+          <span class="sp" style="--c:#E86305">XML</span>
+          <span class="sp" style="--c:#444">XPath</span>
+          <span class="sp" style="--c:#444">XQuery</span>
         </div>
-        <div class="service-card fade-up">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
-            </svg>
-          </div>
-          <h3 data-lang="service-3-title">Apps Desktop & Utilitats</h3>
-          <p data-lang="service-3-desc">Aplicacions d'escriptori i scripts d'automatització en Python, Java o C per optimitzar tasques.</p>
-        </div>
-        <div class="service-card fade-up">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
-            </svg>
-          </div>
-          <h3 data-lang="service-4-title">Consultoria Tècnica</h3>
-          <p data-lang="service-4-desc">Ajudo PIMES i autònoms a digitalitzar-se: infraestructura, eines, processos i presència online.</p>
-        </div>
-        <div class="service-card fade-up">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-            </svg>
-          </div>
-          <h3 data-lang="service-5-title">Manteniment & Suport</h3>
-          <p data-lang="service-5-desc">Manteniment continuat de webs i sistemes, resolució d'incidències i actualitzacions periòdiques.</p>
+      </div>
+      <div class="sg2">
+        <p class="sl" data-k="st-plat">Plataformes i Eines</p>
+        <div class="spp">
+          <span class="sp" style="--c:#4D4D4D">Windows Terminal</span>
+          <span class="sp" style="--c:#E95420">Ubuntu</span>
+          <span class="sp" style="--c:#FCC624;color:#000">Linux</span>
+          <span class="sp" style="--c:#111;outline:1px solid rgba(255,255,255,.2)">Vercel</span>
+          <span class="sp" style="--c:#21759B">WordPress</span>
+          <span class="sp" style="--c:#F26522">Joomla</span>
+          <span class="sp" style="--c:#D22128">Apache</span>
+          <span class="sp" style="--c:#4479A1">MySQL</span>
+          <span class="sp" style="--c:#181717;outline:1px solid rgba(255,255,255,.2)">GitHub</span>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===== EXPERIENCE ===== -->
-  <section id="experience" class="section">
-    <div class="section-inner">
-      <div class="section-header">
-        <span class="section-label" data-lang="experience-label">003</span>
-        <h2 class="section-title" data-lang="experience-title">Experiència</h2>
-      </div>
-      <div class="timeline">
-        <article class="timeline-item fade-up">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date" data-lang="exp-1-date">2025 — Actualment</div>
-          <div class="timeline-body">
-            <h3 class="timeline-role" data-lang="exp-1-role">CEO & Cofundador</h3>
-            <p class="timeline-company" data-lang="exp-1-company">NuviaDev</p>
-            <p class="timeline-desc" data-lang="exp-1-desc">Creació de webs personalitzades, disseny i desenvolupament de projectes digitals. Gestió completa de projectes i relació amb clients a l'ecosistema local.</p>
-          </div>
-        </article>
-        <article class="timeline-item fade-up">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date" data-lang="exp-2-date">2023 — Actualment</div>
-          <div class="timeline-body">
-            <h3 class="timeline-role" data-lang="exp-2-role">Ajudant</h3>
-            <p class="timeline-company" data-lang="exp-2-company">Camins de Vent (Vols en Globus)</p>
-            <p class="timeline-desc" data-lang="exp-2-desc">Muntatge i preparació de globus, seguretat en operacions de vol, assistència a passatgers i coordinació logística d'events aeronàutics.</p>
-          </div>
-        </article>
-        <article class="timeline-item fade-up">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date" data-lang="exp-3-date">2024 — 2025</div>
-          <div class="timeline-body">
-            <h3 class="timeline-role" data-lang="exp-3-role">Tècnic Hardware/Software</h3>
-            <p class="timeline-company" data-lang="exp-3-company">MRP Computer</p>
-            <p class="timeline-desc" data-lang="exp-3-desc">Reparació i manteniment d'equips, instal·lació i configuració de sistemes operatius, suport tècnic i desplegament de software.</p>
-          </div>
-        </article>
-      </div>
+<section id="about" class="sec sec-alt">
+  <div class="sec-in">
+    <div class="sec-head"><span class="sec-num">006</span><h2 class="sec-title" data-k="sec-about">Sobre Mi</h2></div>
+    <div class="ab fi">
+      <p data-k="ab1">Soc un desenvolupador jove i apassionat per la tecnologia, actualment cursant DAM (Desenvolupament d'Aplicacions Multiplataforma) amb interès en aprofundir cap a Enginyeria Informàtica. M'encanta crear solucions reals, útils i modernes, combinant excel·lència tècnica amb sensibilitat en el disseny.</p>
+      <p data-k="ab2">M'especialitzo en desenvolupament web full-stack, aplicacions d'escriptori i consultoria tècnica. Soc fundador de <strong>NuviaDev</strong>, una empresa dedicada a transformar idees en experiències digitals de qualitat.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===== EDUCATION ===== -->
-  <section id="education" class="section section--alt">
-    <div class="section-inner">
-      <div class="section-header">
-        <span class="section-label" data-lang="education-label">004</span>
-        <h2 class="section-title" data-lang="education-title">Formació</h2>
-      </div>
-      <div class="education-grid">
-        <article class="education-card fade-up">
-          <h3 class="edu-degree" data-lang="edu-1-degree">Grau Superior DAM</h3>
-          <p class="edu-school" data-lang="edu-1-school">Institut Milà i Fontanals</p>
-          <p class="edu-period" data-lang="edu-1-period">2025 — 2027</p>
-          <div class="edu-skills">
-            <span>Java</span><span>SQL</span><span>XML</span><span>XSD</span>
-            <span>DTD</span><span>Oracle</span><span>JavaScript</span><span>C</span>
-          </div>
-        </article>
-        <article class="education-card fade-up">
-          <h3 class="edu-degree" data-lang="edu-2-degree">Grau Mitjà SMX</h3>
-          <p class="edu-school" data-lang="edu-2-school">Institut Milà i Fontanals</p>
-          <p class="edu-period" data-lang="edu-2-period">2023 — 2025</p>
-          <div class="edu-skills">
-            <span>Linux</span><span>Xarxes</span><span>Seguretat</span>
-            <span>C</span><span>Windows Admin</span>
-          </div>
-        </article>
-      </div>
+<section id="contact" class="sec ct-sec">
+  <div class="sec-in">
+    <div class="sec-head"><span class="sec-num">007</span><h2 class="sec-title" data-k="sec-contact">Contacte</h2></div>
+    <p class="ct-lead" data-k="ct-lead">Obert a col·laboracions, projectes digitals i idees innovadores.</p>
+    <div class="cl-list">
+      <a href="mailto:martiaaguilera@proton.me" class="cl fi">
+        <i class="cl-ico">@</i>
+        <div class="cl-info"><span class="cl-lbl" data-k="ct-email">Correu</span><span class="cl-val">martiaaguilera@proton.me</span></div>
+        <span class="cl-arr">→</span>
+      </a>
+      <a href="https://github.com/martiaguilera" target="_blank" class="cl fi">
+        <i class="cl-ico">gh</i>
+        <div class="cl-info"><span class="cl-lbl">GitHub</span><span class="cl-val">github.com/martiaguilera</span></div>
+        <span class="cl-arr">→</span>
+      </a>
+      <a href="https://linkedin.com/in/martiaaguilera" target="_blank" class="cl fi">
+        <i class="cl-ico">in</i>
+        <div class="cl-info"><span class="cl-lbl">LinkedIn</span><span class="cl-val">linkedin.com/in/martiaaguilera</span></div>
+        <span class="cl-arr">→</span>
+      </a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===== STACK ===== -->
-  <section id="stack" class="section">
-    <div class="section-inner">
-      <div class="section-header">
-        <span class="section-label" data-lang="stack-label">005</span>
-        <h2 class="section-title" data-lang="stack-title">Stack</h2>
-      </div>
-      <div class="stack-categories fade-up">
-        <div class="stack-group">
-          <p class="stack-label" data-lang="stack-languages">Llenguatges</p>
-          <div class="stack-pills">
-            <span class="stack-pill" style="--pill-bg:#2B5B98">C</span>
-            <span class="stack-pill" style="--pill-bg:#E44D26">HTML5</span>
-            <span class="stack-pill" style="--pill-bg:#1572B6">CSS3</span>
-            <span class="stack-pill" style="--pill-bg:#F7DF1E;color:#000">JavaScript</span>
-            <span class="stack-pill" style="--pill-bg:#777BB4">PHP</span>
-            <span class="stack-pill" style="--pill-bg:#3776AB">Python</span>
-            <span class="stack-pill" style="--pill-bg:#F89820">Java</span>
-            <span class="stack-pill" style="--pill-bg:#4479A1">SQL</span>
-            <span class="stack-pill" style="--pill-bg:#E86305">XML</span>
-            <span class="stack-pill" style="--pill-bg:#444">XPath</span>
-            <span class="stack-pill" style="--pill-bg:#444">XQuery</span>
-          </div>
-        </div>
-        <div class="stack-group">
-          <p class="stack-label" data-lang="stack-platforms">Plataformes i Eines</p>
-          <div class="stack-pills">
-            <span class="stack-pill" style="--pill-bg:#4D4D4D">Windows Terminal</span>
-            <span class="stack-pill" style="--pill-bg:#E95420">Ubuntu</span>
-            <span class="stack-pill" style="--pill-bg:#FCC624;color:#000">Linux</span>
-            <span class="stack-pill" style="--pill-bg:#111;outline:1px solid rgba(255,255,255,0.2)">Vercel</span>
-            <span class="stack-pill" style="--pill-bg:#21759B">WordPress</span>
-            <span class="stack-pill" style="--pill-bg:#F26522">Joomla</span>
-            <span class="stack-pill" style="--pill-bg:#D22128">Apache</span>
-            <span class="stack-pill" style="--pill-bg:#4479A1">MySQL</span>
-            <span class="stack-pill" style="--pill-bg:#181717;outline:1px solid rgba(255,255,255,0.2)">GitHub</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<footer class="foot"><p data-k="footer">Dissenyat i Desenvolupat per Martí Aguilera © 2025</p></footer>
 
-  <!-- ===== ABOUT ===== -->
-  <section id="about" class="section section--alt">
-    <div class="section-inner">
-      <div class="section-header">
-        <span class="section-label" data-lang="about-label">006</span>
-        <h2 class="section-title" data-lang="about-title">Sobre Mi</h2>
-      </div>
-      <div class="about-content fade-up">
-        <p data-lang="about-text-1">
-          Soc un desenvolupador jove i apassionat per la tecnologia, actualment cursant DAM (Desenvolupament d'Aplicacions Multiplataforma) amb interès en aprofundir cap a Enginyeria Informàtica. M'encanta crear solucions reals, útils i modernes, combinant excel·lència tècnica amb sensibilitat en el disseny.
-        </p>
-        <p data-lang="about-text-2">
-          M'especialitzo en desenvolupament web full-stack, aplicacions d'escriptori i consultoria tècnica. Soc fundador de <strong>NuviaDev</strong>, una empresa dedicada a transformar idees en experiències digitals de qualitat per a negocis locals i emprenedories.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CONTACT ===== -->
-  <section id="contact" class="section contact-section">
-    <div class="section-inner">
-      <div class="section-header">
-        <span class="section-label" data-lang="contact-label">007</span>
-        <h2 class="section-title" data-lang="contact-title">Contacte</h2>
-      </div>
-      <p class="contact-text" data-lang="contact-text">Obert a col·laboracions, projectes digitals i idees innovadores.</p>
-      <div class="contact-links">
-        <a href="/cdn-cgi/l/email-protection#f79a9685839e969690829e9b928596b7878598839899d99a92" class="contact-link fade-up">
-          <span class="contact-icon">📧</span>
-          <div class="contact-info">
-            <span class="contact-label" data-lang="contact-email">Correu</span>
-            <span class="contact-value"><span class="__cf_email__" data-cfemail="2845495a5c4149494f5d41444d5a4968585a475c474606454d">[email&#160;protected]</span></span>
-          </div>
-          <span class="contact-arrow">→</span>
-        </a>
-        <a href="https://github.com/martiaguilera" class="contact-link fade-up" target="_blank">
-          <span class="contact-icon">🐙</span>
-          <div class="contact-info">
-            <span class="contact-label">GitHub</span>
-            <span class="contact-value">github.com/martiaguilera</span>
-          </div>
-          <span class="contact-arrow">→</span>
-        </a>
-        <a href="https://linkedin.com/in/martiaaguilera" class="contact-link fade-up" target="_blank">
-          <span class="contact-icon">💼</span>
-          <div class="contact-info">
-            <span class="contact-label">LinkedIn</span>
-            <span class="contact-value">linkedin.com/in/martiaaguilera</span>
-          </div>
-          <span class="contact-arrow">→</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-   
+<script src="main.js"></script>
+</body>
+</html>

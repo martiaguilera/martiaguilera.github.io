@@ -1,0 +1,62 @@
+const T={ca:{'nav-work':'Treballs','nav-services':'Serveis','nav-experience':'Experiència','nav-stack':'Stack','nav-about':'Sobre Mi','nav-contact':'Contacte','hero-eye':'Desenvolupador & Dissenyador','hero-sub':"Creant Experiències Digitals amb Software, Disseny i Innovació.",'hero-meta':'Basat a Catalunya — ©2025','hero-cta':'Veure Projectes','sec-work':'Projectes','sec-services':'Serveis','sec-exp':'Experiència','sec-edu':'Formació','sec-stack':'Stack','sec-about':'Sobre Mi','sec-contact':'Contacte','svc-intro':'Fundador i CEO de <strong>NuviaDev</strong>, empresa especialitzada en creació de webs modernes per a negocis locals i emprenedories digitals.','s1-t':'Dev Web a Mida','s1-d':'Webs modernes, ràpides i adaptades. Des del disseny fins al desplegament.','s2-t':'Disseny UI/UX','s2-d':"Interfícies netes i intuïtives. Usabilitat i estètica al primer pla.",'s3-t':'Apps & Utilitats','s3-d':"Aplicacions d'escriptori i scripts en Python, Java o C.",'s4-t':'Consultoria Tècnica','s4-d':'Digitalització de PIMES: infraestructura, eines i presència online.','s5-t':'Manteniment & Suport','s5-d':"Manteniment continuat, incidències i actualitzacions periòdiques.",'p1-name':"Els Prats d'Or",'p1-badge':'Stack Complet','p1-desc':'Botiga online completa per a una granja local. Full-stack amb carret de compres, gestió de productes en temps real i consultes dinàmiques.','p2-name':'Simple Web Server','p2-badge':'App Desktop','p2-desc':"Aplicació Python que converteix qualsevol carpeta en servidor web local. Interfície gràfica, portable i sense dependències.",'p3-name':'Autoclicker v1.0','p3-badge':'Utilitat','p3-desc':"Eina d'automatització en Python amb tecla d'activació personalitzada i intervals configurables.",'p4-name':'Portfolio Web','p4-badge':'Aquest Lloc','p4-desc':'Portfolio web personal amb disseny minimalista modern, animacions suaus i multilingüe.','p5-name':'catalunyainfo.com','p5-badge':'Portal de Notícies','p5-desc':'Portal de notícies de Catalunya. Plataforma web completa amb contingut editorial i disseny modern. Desplegat amb Vercel.','p5-link':'Visitar web →','e1-d':'2025 — Actualment','e1-r':'CEO & Cofundador','e1-c':'NuviaDev','e1-t':"Creació de webs personalitzades, disseny i desenvolupament de projectes digitals. Gestió completa de projectes i relació amb clients.",'e2-d':'2023 — Actualment','e2-r':'Ajudant','e2-c':'Camins de Vent (Vols en Globus)','e2-t':"Muntatge i preparació de globus, seguretat en operacions de vol, assistència a passatgers i coordinació logística.",'e3-d':'2024 — 2025','e3-r':'Tècnic Hardware/Software','e3-c':'MRP Computer','e3-t':"Reparació i manteniment d'equips, instal·lació de sistemes operatius, suport tècnic i desplegament.",'ed1-d':'Grau Superior DAM','ed1-s':'Institut Milà i Fontanals','ed1-p':'2025 — 2027','ed2-d':'Grau Mitjà SMX','ed2-s':'Institut Milà i Fontanals','ed2-p':'2023 — 2025','st-lang':'Llenguatges','st-plat':'Plataformes i Eines','ab1':"Soc un desenvolupador jove i apassionat per la tecnologia, cursant DAM amb interès en Enginyeria Informàtica. M'encanta crear solucions reals i modernes combinant excel·lència tècnica amb sensibilitat en el disseny.",'ab2':"M'especialitzo en web full-stack, apps d'escriptori i consultoria. Soc fundador de <strong>NuviaDev</strong>, empresa dedicada a transformar idees en experiències digitals de qualitat.",'ct-lead':"Obert a col·laboracions, projectes digitals i idees innovadores.",'ct-email':'Correu','footer':'Dissenyat i Desenvolupat per Martí Aguilera © 2025'},es:{'nav-work':'Trabajos','nav-services':'Servicios','nav-experience':'Experiencia','nav-stack':'Stack','nav-about':'Sobre Mí','nav-contact':'Contacto','hero-eye':'Desarrollador & Diseñador','hero-sub':'Creando Experiencias Digitales con Software, Diseño e Innovación.','hero-meta':'Basado en Catalunya — ©2025','hero-cta':'Ver Proyectos','sec-work':'Proyectos','sec-services':'Servicios','sec-exp':'Experiencia','sec-edu':'Formación','sec-stack':'Stack','sec-about':'Sobre Mí','sec-contact':'Contacto','svc-intro':'Fundador y CEO de <strong>NuviaDev</strong>, empresa especializada en webs modernas para negocios locales y emprendimientos digitales.','s1-t':'Dev Web a Medida','s1-d':'Webs modernas, rápidas y adaptadas. Desde el diseño hasta el despliegue.','s2-t':'Diseño UI/UX','s2-d':'Interfaces limpias e intuitivas. Usabilidad y estética al frente.','s3-t':'Apps & Utilidades','s3-d':'Aplicaciones de escritorio y scripts en Python, Java o C.','s4-t':'Consultoría Técnica','s4-d':'Digitalización de PYMEs: infraestructura, herramientas y presencia online.','s5-t':'Mantenimiento & Soporte','s5-d':'Mantenimiento continuado, incidencias y actualizaciones periódicas.','p1-name':"Els Prats d'Or",'p1-badge':'Stack Completo','p1-desc':'Tienda online completa para una granja local. Full-stack con carrito, gestión de productos en tiempo real y consultas dinámicas.','p2-name':'Simple Web Server','p2-badge':'App Desktop','p2-desc':'App Python que convierte cualquier carpeta en servidor web local. Interfaz gráfica, portable y sin dependencias externas.','p3-name':'Autoclicker v1.0','p3-badge':'Utilidad','p3-desc':'Herramienta de automatización en Python con tecla personalizada e intervalos configurables.','p4-name':'Portfolio Web','p4-badge':'Este Sitio','p4-desc':'Portfolio personal con diseño minimalista moderno, animaciones suaves y multilingüe.','p5-name':'catalunyainfo.com','p5-badge':'Portal de Noticias','p5-desc':'Portal de noticias de Catalunya. Plataforma web con contenido editorial y diseño moderno. Desplegado en Vercel.','p5-link':'Visitar web →','e1-d':'2025 — Actualidad','e1-r':'CEO & Cofundador','e1-c':'NuviaDev','e1-t':'Creación de webs personalizadas, diseño y desarrollo de proyectos digitales. Gestión completa y relación con clientes.','e2-d':'2023 — Actualidad','e2-r':'Ayudante','e2-c':'Camins de Vent (Vuelos en Globo)','e2-t':'Montaje de globos, seguridad en vuelo, asistencia a pasajeros y coordinación logística.','e3-d':'2024 — 2025','e3-r':'Técnico Hardware/Software','e3-c':'MRP Computer','e3-t':'Reparación de equipos, instalación de sistemas operativos, soporte técnico y despliegue.','ed1-d':'Grado Superior DAM','ed1-s':'Institut Milà i Fontanals','ed1-p':'2025 — 2027','ed2-d':'Grado Medio SMX','ed2-s':'Institut Milà i Fontanals','ed2-p':'2023 — 2025','st-lang':'Lenguajes','st-plat':'Plataformas y Herramientas','ab1':'Soy un desarrollador joven apasionado por la tecnología, cursando DAM con interés en Ingeniería Informática. Me encanta crear soluciones reales y modernas combinando excelencia técnica con diseño.','ab2':'Me especializo en web full-stack, apps de escritorio y consultoría. Soy fundador de <strong>NuviaDev</strong>, empresa dedicada a transformar ideas en experiencias digitales de calidad.','ct-lead':'Abierto a colaboraciones, proyectos digitales e ideas innovadoras.','ct-email':'Correo','footer':'Diseñado y Desarrollado por Martí Aguilera © 2025'},en:{'nav-work':'Work','nav-services':'Services','nav-experience':'Experience','nav-stack':'Stack','nav-about':'About Me','nav-contact':'Contact','hero-eye':'Developer & Designer','hero-sub':'Creating Digital Experiences with Software, Design and Innovation.','hero-meta':'Based in Catalunya — ©2025','hero-cta':'View Projects','sec-work':'Projects','sec-services':'Services','sec-exp':'Experience','sec-edu':'Education','sec-stack':'Stack','sec-about':'About Me','sec-contact':'Contact','svc-intro':'Founder and CEO of <strong>NuviaDev</strong>, specialised in modern websites for local businesses and digital startups.','s1-t':'Custom Web Dev','s1-d':'Modern, fast websites tailored to each business. From design to deployment.','s2-t':'UI/UX Design','s2-d':'Clean, intuitive interfaces. Usability and aesthetics first.','s3-t':'Apps & Utilities','s3-d':'Desktop applications and automation scripts in Python, Java or C.','s4-t':'Technical Consulting','s4-d':'Helping SMEs go digital: infrastructure, tools and online presence.','s5-t':'Maintenance & Support','s5-d':'Ongoing maintenance, incident resolution and periodic updates.','p1-name':"Els Prats d'Or",'p1-badge':'Full Stack','p1-desc':'Complete online store for a local farm. Full-stack with shopping cart, real-time product management and dynamic queries.','p2-name':'Simple Web Server','p2-badge':'Desktop App','p2-desc':'Python app that turns any folder into a local web server. GUI, portable, no external dependencies.','p3-name':'Autoclicker v1.0','p3-badge':'Utility','p3-desc':'Python automation tool with customisable activation key and configurable millisecond intervals.','p4-name':'Web Portfolio','p4-badge':'This Site','p4-desc':'Personal portfolio with modern minimalist design, smooth animations and multilingual support.','p5-name':'catalunyainfo.com','p5-badge':'News Portal','p5-desc':'Catalunya news portal. Full web platform with editorial content and modern design. Deployed on Vercel.','p5-link':'Visit website →','e1-d':'2025 — Present','e1-r':'CEO & Co-founder','e1-c':'NuviaDev','e1-t':'Custom website creation, design and development. Full project management and client relations.','e2-d':'2023 — Present','e2-r':'Assistant','e2-c':'Camins de Vent (Hot Air Balloons)','e2-t':'Balloon assembly, flight safety, passenger assistance and logistical coordination.','e3-d':'2024 — 2025','e3-r':'Hardware/Software Technician','e3-c':'MRP Computer','e3-t':'Equipment repair, OS installation, technical support and software deployment.','ed1-d':'Higher Degree DAM','ed1-s':'Institut Milà i Fontanals','ed1-p':'2025 — 2027','ed2-d':'Medium Degree SMX','ed2-s':'Institut Milà i Fontanals','ed2-p':'2023 — 2025','st-lang':'Languages','st-plat':'Platforms & Tools','ab1':"Young developer passionate about technology, pursuing DAM with interest in Computer Science. I love building real, useful solutions combining technical excellence with design sensitivity.",'ab2':'I specialise in full-stack web, desktop apps and consulting. Founder of <strong>NuviaDev</strong>, turning ideas into quality digital experiences.','ct-lead':'Open to collaborations, digital projects and innovative ideas.','ct-email':'Email','footer':'Designed and Developed by Martí Aguilera © 2025'}};
+
+let lang=localStorage.getItem('lang')||'ca',tTimer=null,tSess=0;
+
+function apply(l){
+  lang=l; localStorage.setItem('lang',l); document.documentElement.lang=l;
+  document.querySelectorAll('[data-k]').forEach(el=>{
+    const k=el.getAttribute('data-k');
+    if(k==='hero-sub') return;
+    const v=T[l]?.[k]; if(v==null) return;
+    if(v.includes('<')){el.innerHTML=v;}else{el.textContent=v;}
+  });
+  document.querySelectorAll('.lb').forEach(b=>b.classList.toggle('on',b.getAttribute('data-l')===l));
+  startTyping();
+}
+
+function startTyping(){
+  const el=document.getElementById('tsub'); if(!el) return;
+  const txt=T[lang]?.['hero-sub']||'';
+  if(tTimer) clearTimeout(tTimer);
+  tSess++; const s=tSess;
+  el.textContent=''; el.classList.remove('done');
+  let i=0;
+  function tick(){
+    if(tSess!==s) return;
+    if(i<txt.length){el.textContent+=txt[i++];tTimer=setTimeout(tick,38);}
+    else{el.classList.add('done');}
+  }
+  tTimer=setTimeout(tick,500);
+}
+
+function checkFi(){
+  document.querySelectorAll('.fi:not(.show)').forEach(el=>{
+    if(el.getBoundingClientRect().top<window.innerHeight-50) el.classList.add('show');
+  });
+}
+
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').classList.toggle('scrolled',window.scrollY>30);
+  document.querySelectorAll('section[id]').forEach(sec=>{
+    const r=sec.getBoundingClientRect();
+    if(r.top<=80&&r.bottom>=80){
+      document.querySelectorAll('.nl a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+sec.id));
+    }
+  });
+  checkFi();
+},{passive:true});
+
+const hbg=document.getElementById('hbg'),mob=document.getElementById('mob');
+hbg.addEventListener('click',()=>{hbg.classList.toggle('open');mob.classList.toggle('open');});
+mob.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{hbg.classList.remove('open');mob.classList.remove('open');}));
+
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{
+  const t=document.querySelector(a.getAttribute('href')); if(!t) return;
+  e.preventDefault(); window.scrollTo({top:t.offsetTop-60,behavior:'smooth'});
+}));
+
+document.querySelectorAll('.lb').forEach(b=>b.addEventListener('click',()=>apply(b.getAttribute('data-l'))));
+
+apply(lang);
+setTimeout(checkFi,150);
+window.addEventListener('resize',checkFi);
